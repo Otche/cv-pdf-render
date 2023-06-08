@@ -1,7 +1,8 @@
 import React from "react";
-import { View, StyleSheet } from "@react-pdf/renderer";
+import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { SectionBadge } from "../components/SectionBadge";
-import { CompetanceHeader } from "../components/CompetanceHeader";
+import { SkillsHeader } from "../components/SkillsHeader";
+
 // Create styles
 const sideSectionStyles = StyleSheet.create({
   height: "100%",
@@ -21,8 +22,18 @@ export const SideSection = (props) => (
     >
       <SectionBadge label={"Compétences"} />
     </View>
-    <View style={{ marginTop: "10px" }}>
-      <CompetanceHeader />
+    <View style={{ marginTop: "10px", marginLeft: "5%",
+        marginRight: "5%",}}>
+      <SkillsHeader />
+      <View style={{marginTop :"5px"}}>
+        <Text style={{color :"white"}}>
+          test
+        </Text>
+        <View style={{backgroundColor :"white", height: "3px", width : "100%"}}>
+          <View style={{backgroundColor :"#12B4E4", height: "100%", width : "50%"}}>
+          </View>
+        </View>
+      </View>
     </View>
   </View>
 );

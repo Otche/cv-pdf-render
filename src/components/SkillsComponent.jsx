@@ -8,13 +8,10 @@ import {
 import { getFileData } from "../utils/read-file";
 import profileImage from "../assets/profil-image.png";
 // Create styles
-const competanceHeaderStyles = StyleSheet.create(
+const skillsHeaderStyles = StyleSheet.create(
     {
         backgroundColor: "white",
         height: "15px",
-        width: "90%",
-        marginLeft: "5%",
-        marginRight: "5%",
         borderColor: "#12B4E4",
         borderStyle: "solid",
         borderWidth: "1px",
@@ -22,9 +19,9 @@ const competanceHeaderStyles = StyleSheet.create(
         display: "flex",
         flexDirection: "row",
       });
-export const CompetanceHeader = (props) => (
+export const SkillsHeader= (props) => (
     <View
-    style={competanceHeaderStyles}
+    style={skillsHeaderStyles}
   >
     <View
       style={{
