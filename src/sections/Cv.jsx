@@ -7,6 +7,7 @@ import {
   StyleSheet,
 } from "@react-pdf/renderer";
 import { Header } from "./Header";
+import { Body } from "./Body";
 
 const FORMAT = "A4";
 
@@ -21,9 +22,7 @@ export const Cv = () => (
   <Document>
     <Page size={FORMAT} style={rootStyle}>
       <Header />
-      <View>
-        <Text>TEST</Text>
-      </View>
+      <Body/>
     </Page>
   </Document>
 );

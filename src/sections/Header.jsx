@@ -8,27 +8,20 @@ import emailIcon from "../assets/email.png";
 import linkedinIcon from "../assets/linkedin.png";
 import profileImage from "../assets/profil-image.png";
 
-// Create styles
-const headerStyles = StyleSheet.create({
-  height: "150px",
-  display: "flex",
-  flexDirection: "row",
-  backgroundColor: "#58585A",
-  color: "white",
-});
 
-const IdentiyRender = () => (
-  <View>
-    <Text
-      style={{
-        fontFamily: "Times-Italic",
-        fontSize: "15px",
-      }}
-    >
+
+const IdentiyRender = (props ) => (
+  <View style={{
+    fontFamily: "Times-Italic",
+    fontSize: "15px",
+    marginTop : "5px"
+  }}
+   {... props} 
+  >
+    <Text>
       Amine OUCHIHA{" "}
       <Text
         style={{
-          fontFamily: "Times-Italic",
           fontSize: "10px",
         }}
       >
@@ -38,7 +31,7 @@ const IdentiyRender = () => (
   </View>
 );
 
-const JobNameRender = () => (
+const JobNameRender = (props) => (
   <Text
     style={{
       fontFamily: "Times-Italic",
@@ -48,47 +41,20 @@ const JobNameRender = () => (
       borderBottomStyle: "solid",
       borderBottomWidth: "2px",
     }}
+    {... props}
   >
     Développeur full stack
   </Text>
 );
 
-const infoRender = (text, icon, linkType) => (
-  <View style={{ marginTop: "2px" }}>
-    <Text
-      style={{
-        fontSize: "10px",
-      }}
-    >
-      <Image
-        style={{
-          height: "15px",
-          width: "15px",
-        }}
-        src={getFileData(icon)}
-      />
-      {(linkType === "mailto" || linkType === "tel") && (
-        <Link style={{ color: "white" }} src={`${linkType}:${{ text }}`}>
-          <Text>{text}</Text>
-        </Link>
-      )}
-      {linkType === "url" && (
-        <Link style={{ color: "white" }} src={text}>
-          <Text>{text}</Text>
-        </Link>
-      )}
-      {!linkType && <Text>{text}</Text>}
-    </Text>
-  </View>
-);
 
-const ContactRender = () => {
+const ContactRender = (props) => {
   const adresse = "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.";
   const phone = "+33781581021";
   const email = "ouchihaamine@gmail.com";
   const linkedin = "https://fr.linkedin.com/in/amine-ouchiha-608808b3";
   return (
-    <View>
+    <View {...props}>
       <InfoLine text={adresse} icon={locationIcon} />
       <InfoLine text={phone} icon={phoneIcon} linkType={"tel"} />
       <InfoLine text={email} icon={emailIcon} linkType={"mailto"} />
@@ -97,12 +63,13 @@ const ContactRender = () => {
   );
 };
 
-const ImageProfilRender = () => (
+const ImageProfilRender = ( props) => (
   <View
     style={{
       width: "20%",
       height: "100%",
     }}
+    {...props}
   >
     <View
       style={{
@@ -110,17 +77,27 @@ const ImageProfilRender = () => (
         height: "10%",
       }}
     ></View>
-    <Image
-      style={{
-        width: "100%",
-        height: "80%",
-        borderColor: "#12B4E4",
-        borderStyle: "solid",
-        borderWidth: "10px",
-        borderRadius: "5px",
-      }}
-      src={getFileData(profileImage)}
-    />
+    <View  style={{
+          width: "100%",
+          height: "80%",
+          borderColor: "#12B4E4",
+          borderStyle: "solid",
+          borderWidth: "2px",
+          borderLeftWidth: "3px",
+          borderRightWidth: "3px",
+          borderRadius: "2px",
+        }}>
+      <Image
+        style={{
+          marginLeft :"-1px",
+          width: "102%",
+          height: "102%",
+          borderRadius: "2px",
+        }}
+        src={getFileData(profileImage)}
+      />
+    </View>
+    
 
     <View
       style={{
@@ -131,22 +108,26 @@ const ImageProfilRender = () => (
   </View>
 );
 
-const LeftSectionRender = () => {
+const LeftSectionRender = (props) => {
   return (
     <View
       style={{
         width: "30%",
         height: "100%",
-        paddingLeft: "5px ",
+        marginLeft: "5px",
+        paddingRight: "5px",
       }}
+      {...props}
     >
-      {IdentiyRender()}
-      {ContactRender()}
+      <IdentiyRender/>
+      <ContactRender style = {{
+        marginTop : "10px"
+      }}/>
     </View>
   );
 };
 
-const RigthSectionRender = () => {
+const RigthSectionRender = (props) => {
   return (
     <View
       style={{
@@ -155,17 +136,39 @@ const RigthSectionRender = () => {
         marginRight: "5px",
         marginLeft: "5px",
       }}
+      {...props}
     >
-      {JobNameRender()}
+      <JobNameRender/>
+      <Text  style={{
+        marginTop: "10px",
+        fontSize : "10px",
+        marginRight :"5px",
+        lineHeight : "1.5px",
+      }}>
+        Titulaire depuis 2015 d’un Master en Analyse et Conception de Systèmes
+        d'Informations Sûrs, je suis intervenu sur diffrents projets de conseils et de
+        développements avec des aspects technologiques divers notament sur les
+        ecosystemes Node.js/ React.js. Aujourd’hui, je suis à la recherche de
+        nouvelles opportunités en tant que développeur et/ou lead-dev.
+      </Text>
     </View>
   );
 };
 
+
+// Create styles
+const headerStyles = StyleSheet.create({
+  height: "150px",
+  display: "flex",
+  flexDirection: "row",
+  backgroundColor: "#58585A",
+  color: "white",
+});
 // Create Document Component
-export const Header = () => (
-  <View style={headerStyles}>
-    {LeftSectionRender()}
-    {ImageProfilRender()}
-    {RigthSectionRender()}
+export const Header = ( props ) => (
+  <View style={headerStyles} {... props}>
+    <LeftSectionRender/>
+    <ImageProfilRender/>
+    <RigthSectionRender/>
   </View>
 );

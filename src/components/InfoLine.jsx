@@ -3,8 +3,9 @@ import { Image, Link, Text, View } from "@react-pdf/renderer";
 import { getFileData } from "../utils/read-file";
 
 
-export const InfoLine = ({text, icon, linkType}) => {
-    return <View style={{ marginTop: "2px" }}>
+export const InfoLine = (props) => {
+    const {text, icon, linkType} =  props
+    return <View style={{ marginTop: "2px" }} {...props} >
       <Text
         style={{
           fontSize: "10px",
