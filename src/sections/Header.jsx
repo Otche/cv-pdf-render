@@ -85,14 +85,14 @@ const ImageProfilRender = ( props) => (
           borderWidth: "2px",
           borderLeftWidth: "3px",
           borderRightWidth: "3px",
-          borderRadius: "2px",
+          borderRadius: "3px",
         }}>
       <Image
         style={{
           marginLeft :"-1px",
           width: "102%",
           height: "102%",
-          borderRadius: "2px",
+          borderRadius: "3px",
         }}
         src={getFileData(profileImage)}
       />
@@ -158,11 +158,14 @@ const RigthSectionRender = (props) => {
 
 // Create styles
 const headerStyles = StyleSheet.create({
-  height: "150px",
+  height: "17%",
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#58585A",
   color: "white",
+  borderBottomColor: "#12B4E4",
+  borderBottomStyle: "solid",
+  borderBottomWidth: "2px",
 });
 // Create Document Component
 export const Header = ( props ) => (
