@@ -10,6 +10,9 @@ const sideSectionStyles = StyleSheet.create({
   display: "flex",
   backgroundColor: "#58585A",
   color: "white",
+  borderRightColor: "#12B4E4",
+  borderRightStyle: "solid",
+  borderRightWidth: "2px",
 });
 
 const skills = [
@@ -32,6 +35,7 @@ export const SideSection = (props) => {
           display: "flex",
           justifyContent: "center",
           flexDirection: "row",
+     
         }}
       >
         <SectionBadge label={"Compétences"} />
