@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Image, Link } from "@react-pdf/renderer";
+import { Text, View, StyleSheet, Image } from "@react-pdf/renderer";
 import { InfoLine } from "../components/InfoLine";
 import { getFileData } from "../utils/read-file";
 import locationIcon from "../assets/location.png";
