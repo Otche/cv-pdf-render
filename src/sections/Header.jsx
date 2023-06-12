@@ -2,13 +2,15 @@ import React from "react";
 import { Text, View, StyleSheet, Image } from "@react-pdf/renderer";
 import { InfoLine } from "../components/InfoLine";
 import { getFileData } from "../utils/read-file";
-import locationIcon from "../assets/location.png";
-import phoneIcon from "../assets/phone.png";
-import emailIcon from "../assets/email.png";
-import linkedinIcon from "../assets/linkedin.png";
-import profileImage from "../assets/profil-image.png";
+import locationIcon from "../assets/images/location.png";
+import phoneIcon from "../assets/images/phone.png";
+import emailIcon from "../assets/images/email.png";
+import linkedinIcon from "../assets/images/linkedin.png";
+import profileImage from "../assets/images/profil-image.png";
 
+import cvData from "../assets/data/cv";
 
+const {age, overview, phone, linkedin, email, name, adresse}  = cvData;
 
 const IdentiyRender = (props ) => (
   <View style={{
@@ -19,13 +21,13 @@ const IdentiyRender = (props ) => (
    {... props} 
   >
     <Text>
-      Amine OUCHIHA{" "}
+      {name}
       <Text
         style={{
           fontSize: "10px",
         }}
       >
-        (30 ans)
+        ({age} ans)
       </Text>
     </Text>
   </View>
@@ -49,10 +51,6 @@ const JobNameRender = (props) => (
 
 
 const ContactRender = (props) => {
-  const adresse = "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.";
-  const phone = "+33781581021";
-  const email = "ouchihaamine@gmail.com";
-  const linkedin = "https://fr.linkedin.com/in/amine-ouchiha-608808b3";
   return (
     <View {...props}>
       <InfoLine text={adresse} icon={locationIcon} />
@@ -145,11 +143,7 @@ const RigthSectionRender = (props) => {
         marginRight :"5px",
         lineHeight : "1.5px",
       }}>
-        Titulaire depuis 2015 d’un Master en Analyse et Conception de Systèmes
-        d'Informations Sûrs, je suis intervenu sur diffrents projets de conseils et de
-        développements avec des aspects technologiques divers notament sur les
-        ecosystemes Node.js/ React.js. Aujourd’hui, je suis à la recherche de
-        nouvelles opportunités en tant que développeur et/ou lead-dev.
+        {overview}
       </Text>
     </View>
   );

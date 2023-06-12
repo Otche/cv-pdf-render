@@ -2,7 +2,10 @@ import React from "react";
 import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { SectionBadge } from "../components/SectionBadge";
 import { SkillsTypeContent } from "../components/SkillsTypeContent";
+import cvData from "../assets/data/cv";
 
+
+const skills = cvData.skills;
 // Create styles
 const sideSectionStyles = StyleSheet.create({
   height: "100%",
@@ -15,18 +18,18 @@ const sideSectionStyles = StyleSheet.create({
   borderRightWidth: "2px",
 });
 
-const skills = [
-  {
-    skillType: "devops",
-    skillTypeIcon: require("../assets/profil-image.png"),
-    skillsList: [
-      {
-        skillLabel: "tttttt",
-        skillProgress: 50,
-      },
-    ],
-  },
-];
+// const skills = [
+//   {
+//     skillType: "devops",
+//     skillTypeIcon: require("../assets/images/profil-image.png"),
+//     skillsList: [
+//       {
+//         skillLabel: "tttttt",
+//         skillProgress: 50,
+//       },
+//     ],
+//   },
+//];
 export const SideSection = (props) => {
   return (
     <View style={sideSectionStyles} {...props}>

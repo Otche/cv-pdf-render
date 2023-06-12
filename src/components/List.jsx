@@ -6,7 +6,7 @@ export const List = (props) => {
   return (
     <View {...props}>
         {
-            listItems.map( e => <Text> -  {e}</Text> )
+            listItems.map( e => <Text>{e}</Text> )
         }
     </View>
   );
