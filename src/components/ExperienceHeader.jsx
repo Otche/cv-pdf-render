@@ -3,15 +3,14 @@ import { View, StyleSheet, Text } from "@react-pdf/renderer";
 
 // Create styles
 
-export const ExperienceHeader = (props) => (
+export const ExperienceHeader = ({label, tag}) => (
     <View>
         <View
         style={{
           borderBottomColor: "#12B4E4",
           borderBottomStyle: "solid",
           borderBottomWidth: "2px",
-          marginLeft: "5px",
-          width: "95%",
+       
         }}
       >
         <Text
@@ -20,13 +19,12 @@ export const ExperienceHeader = (props) => (
             color: "#58585A",
           }}
         >
-          Edifixio
+        {label}
         </Text>
       </View>
       <View
         style={{
           display: "flex",
-          width: "95%",
           flexDirection: "row-reverse",
         }}
       >
@@ -39,10 +37,9 @@ export const ExperienceHeader = (props) => (
             padding : "3px",
             borderBottomLeftRadius : "3px",
             borderBottomRightRadius: "3px",
-            marginRight : "-5px",
           }}
         >
-          sept 201533 - dec 2018
+           {tag}
         </Text>
       </View>
     </View>   

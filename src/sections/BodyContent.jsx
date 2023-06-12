@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { SectionBadge } from "../components/SectionBadge";
-import { ExperienceHeader } from "../components/ExperienceHeader";
+import { ExperienceSection } from "./ExperienceSection";
 
 // Create styles
 const bodyContentStyles = StyleSheet.create({
@@ -19,12 +19,6 @@ export const BodyContent = (props) => (
     >
       <SectionBadge label={"Expériences"} />
     </View>
-    <View
-      style={{
-        marginTop: "20px",
-      }}
-    >
-      <ExperienceHeader/>
-    </View>
+   <ExperienceSection/>
   </View>
 );
