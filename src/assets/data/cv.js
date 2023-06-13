@@ -130,32 +130,33 @@ export default {
     },
   ],
   experiences: [
-    // {
-    //   experienceLabel: "Europ Assistance",
-    //   experiencetag: "Jui 2022 - aujourd'hui",
-    //   projectName: " E-claims.",
-    //   client: " Europ Assistance.",
-    //   tecs: " React.js, admin-on-rest, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS.",
-    //   projectContext:
-    //     "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sue le projet e-claims, dans une équipe composé de 5 dévloppeur, 1 PO et un Manager. La platforme gére des demande de romboursement pour le compte de diffirent client comme AirBnb et Lastminute et transmet les demande au diffirent fourniseur de couverture.",
-    //   projectMissions: [
-    //     "Développement des différentes fonctionnalité de configuration, de gestion, et de remonté de données des dispositifs.",
-    //     "Ecriture des testes d'intégrations.",
-    //     "Livraison et gestions des version des différents composants applicatifs."
-    //   ],
-    // },
+     {
+      experienceLabel: "Europ Assistance",
+      experiencetag: "Jui 2022 - aujourd'hui",
+      projectName: " E-claims.",
+      client: " Europ Assistance.",
+      tecs: " React.js, admin-on-rest, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3.",
+      projectContext:
+        "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sue le projet e-claims, dans une équipe composé de 5 dévloppeur, 1 PO et un Manager. La platforme gére des demande de romboursement pour le compte de diffirent client comme AirBnb et Lastminute et transmet les demande au diffirent fourniseur de couverture.",
+      projectMissions: [
+        "- Développement et maintenace des fonctionnalités front en React.js.",
+        "- Refont du front React.js.",
+        "- Développement et maintenace des fonctionnalité back en Java et Loopback ",
+        "- Migration Loopback 2 à 3."
+     ],
+     },
     {
       experienceLabel: "ITNovem (SNCF)",
       experiencetag: "Jan 2021 - Fév 2022",
       projectName: " e-IOT.",
       client: " ITNovem (SNCF).",
-      tecs: "Nest.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud .",
+      tecs: "Nest.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud.",
       projectContext:
         "Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.",
       projectMissions: [
-        "Développement des différentes fonctionnalité de configuration, de gestion, et de remonté de données des dispositifs.",
-        "Ecriture des testes d'intégrations.",
-        "Livraison et gestions des version des différents composants applicatifs."
+        "- Développement des fonctionnalité de configuration, gestion et remonté de données desdes IoT's.",
+        "- Ecriture des testes d'intégrations.",
+        "- Livraison et gestions des version des différents composants applicatifs."
       ],
     },
     {
@@ -179,9 +180,9 @@ export default {
       projectContext:
         "Pour le compte de la SI Edifixio je suis intérvenu sur des missions diverse pour le compte de plusieur Client comme l'inter mutuelle assistance (IMA) ainsi que Carrefour et la COFREND.",
       projectMissions: [
-        "- Réalisation d'une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation pour l'inter mutuelle assistance (IMA).",
+        "- Réalisation d'une application de dépannage d’urgence.",
         "- Maintenance du référentiel produit Carrefour .",
-        "- Plateforme web et collaborative pour le compte de la COFREND avec Jalios CMS.",
+        "- Réalisation d'une Plateforme web et collaborative pour le compte de la COFREND avec Jalios CMS.",
       ],
     }
     ,
@@ -196,6 +197,7 @@ export default {
         "- Étude de l’état de l’art sur les moteurs de recherches.",
         "- Conception et réalisation d'une API configurable utilisant des facettes sur ElasticSearch en Java.",
       ],
+      dislayPage : 2
     }
   ],
 };

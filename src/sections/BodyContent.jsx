@@ -4,14 +4,16 @@ import { SectionBadge } from "../components/SectionBadge";
 import { ExperienceSection } from "./ExperienceSection";
 
 import cvData from "../assets/data/cv";
-const experiences = cvData.experiences;
+
 // Create styles
 const bodyContentStyles = StyleSheet.create({
   height: "100%",
   width: "70%",
 });
-export const BodyContent = (props) => (
-  <View style={bodyContentStyles} {...props}>
+export const BodyContent = (props) => {
+  const {pagenum} = props;
+  const experiences = cvData.experiences.filter(e => e.dislayPage === pagenum || (!e.dislayPage && pagenum === 1 ) );
+  return <View style={bodyContentStyles} {...props}>
     <View
       style={{
         display: "flex",
@@ -19,7 +21,7 @@ export const BodyContent = (props) => (
         flexDirection: "row",
       }}
     >
-      <SectionBadge label={"Expériences"} />
+     {pagenum === 1 && <SectionBadge label={"Expériences"} /> } 
     </View>
 
     <View
@@ -52,4 +54,4 @@ export const BodyContent = (props) => (
       })}
     </View>
   </View>
-);
+};

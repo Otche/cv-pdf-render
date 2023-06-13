@@ -16,11 +16,16 @@ const rootStyle = StyleSheet.create({
   fontFamily: "Times-Roman",
 });
 
+
+
 export const Cv = () => (
   <Document>
     <Page size={FORMAT} style={rootStyle}>
       <Header />
-      <Body/>
+      <Body pagenum={1}/>
+    </Page>
+    <Page size={FORMAT} style={rootStyle}>
+      <Body pagenum={2}/>
     </Page>
   </Document>
 );

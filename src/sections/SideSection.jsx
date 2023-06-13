@@ -5,7 +5,7 @@ import { SkillsTypeContent } from "../components/SkillsTypeContent";
 import cvData from "../assets/data/cv";
 
 
-const skills = cvData.skills;
+
 // Create styles
 const sideSectionStyles = StyleSheet.create({
   height: "100%",
@@ -17,20 +17,9 @@ const sideSectionStyles = StyleSheet.create({
   borderRightStyle: "solid",
   borderRightWidth: "2px",
 });
-
-// const skills = [
-//   {
-//     skillType: "devops",
-//     skillTypeIcon: require("../assets/images/profil-image.png"),
-//     skillsList: [
-//       {
-//         skillLabel: "tttttt",
-//         skillProgress: 50,
-//       },
-//     ],
-//   },
-//];
 export const SideSection = (props) => {
+  const {pagenum} = props;
+  const skills = cvData.skills.filter(e => e.dislayPage === pagenum || (!e.dislayPage && pagenum === 1 ) );
   return (
     <View style={sideSectionStyles} {...props}>
       <View
@@ -41,7 +30,7 @@ export const SideSection = (props) => {
      
         }}
       >
-        <SectionBadge label={"Compétences"} />
+       {pagenum === 1  && <SectionBadge label={"Compétences"} />} 
       </View>
       {skills.map((skl) => (
         <SkillsTypeContent
