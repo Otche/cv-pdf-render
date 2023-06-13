@@ -22,16 +22,19 @@ export const SideSection = (props) => {
   const skills = cvData.skills.filter(e => e.dislayPage === pagenum || (!e.dislayPage && pagenum === 1 ) );
   return (
     <View style={sideSectionStyles} {...props}>
-      <View
+      {pagenum === 1  && <View
         style={{
           display: "flex",
           justifyContent: "center",
           flexDirection: "row",
+          borderTopColor: "#12B4E4",
+          borderTopStyle: "solid",
+          borderTopWidth: "2px",
      
         }}
       >
-       {pagenum === 1  && <SectionBadge label={"Compétences"} />} 
-      </View>
+       <SectionBadge label={"Compétences"} />
+      </View>} 
       {skills.map((skl) => (
         <SkillsTypeContent
           skillTypeLabel={skl.skillType}

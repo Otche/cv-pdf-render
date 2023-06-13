@@ -157,9 +157,7 @@ const headerStyles = StyleSheet.create({
   flexDirection: "row",
   backgroundColor: "#58585A",
   color: "white",
-  borderBottomColor: "#12B4E4",
-  borderBottomStyle: "solid",
-  borderBottomWidth: "2px",
+
 });
 // Create Document Component
 export const Header = ( props ) => (
