@@ -24,7 +24,6 @@ export const BodyContent = (props) => (
 
     <View
       style={{
-        marginTop: "20px",
         marginLeft: "5px",
         width: "95%",
       }}

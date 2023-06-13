@@ -15,7 +15,9 @@ export const ExperienceSection = ({
     
   
     return (
-    <View>
+    <View style={{
+      marginTop : "10px"
+    }}>
       <ExperienceHeader
         label={experienceLabel}
         tag={experiencetag} 

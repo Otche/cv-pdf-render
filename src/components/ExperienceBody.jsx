@@ -3,8 +3,13 @@ import { View, Text } from "@react-pdf/renderer";
 import { ExperienceHeader } from "../components/ExperienceHeader";
 import { List } from "../components/List";
 
-export const ExperienceBody = ({ projectName, client, tecs, projectContext, projectMissions } ) => {
-
+export const ExperienceBody = ({
+  projectName,
+  client,
+  tecs,
+  projectContext,
+  projectMissions,
+}) => {
   return (
     <View>
       <View
@@ -13,7 +18,7 @@ export const ExperienceBody = ({ projectName, client, tecs, projectContext, proj
           flexDirection: "row",
         }}
       >
-        <Text
+       { projectName && <Text
           style={{
             fontSize: "10px",
             color: "#58585A",
@@ -29,8 +34,8 @@ export const ExperienceBody = ({ projectName, client, tecs, projectContext, proj
           >
             {projectName}
           </Text>
-        </Text>
-        <Text
+        </Text> }
+        {client && <Text
           style={{
             fontSize: "10px",
             color: "#58585A",
@@ -47,10 +52,10 @@ export const ExperienceBody = ({ projectName, client, tecs, projectContext, proj
           >
             {client}
           </Text>
-        </Text>
+        </Text> }
       </View>
 
-      <View style={{ marginTop: "4px" }}>
+      { tecs && <View style={{ marginTop: "4px" }}>
         <Text
           style={{
             fontSize: "10px",
@@ -65,13 +70,13 @@ export const ExperienceBody = ({ projectName, client, tecs, projectContext, proj
               fontSize: "9px",
             }}
           >
-           {tecs}
-           
+            {tecs}
           </Text>
         </Text>
-      </View>
+      </View> }
 
-      <View style={{ marginTop: "4px" }}>
+      
+      {projectContext && (<View style={{ marginTop: "4px" }}>
         <Text
           style={{
             fontSize: "10px",
@@ -91,29 +96,31 @@ export const ExperienceBody = ({ projectName, client, tecs, projectContext, proj
         >
           {projectContext}
         </Text>
-      </View>
+      </View>) }
 
-      <View style={{ marginTop: "4px" }}>
-        <Text
-          style={{
-            fontSize: "10px",
-            color: "#58585A",
-            fontFamily: "Times-Bold",
-          }}
-        >
-          {" "}
-          Missions :{" "}
-        </Text>
-        <List
-          style={{
-            color: "#58585A",
-            fontFamily: "Times-Roman",
-            fontSize: "9px",
-            paddingLeft: "10px",
-          }}
-          listItems={ projectMissions}
-        />
-      </View>
+      {projectMissions && (
+        <View style={{ marginTop: "4px" }}>
+          <Text
+            style={{
+              fontSize: "10px",
+              color: "#58585A",
+              fontFamily: "Times-Bold",
+            }}
+          >
+            {" "}
+            Missions :{" "}
+          </Text>
+          <List
+            style={{
+              color: "#58585A",
+              fontFamily: "Times-Roman",
+              fontSize: "9px",
+              paddingLeft: "10px",
+            }}
+            listItems={projectMissions}
+          />
+        </View>
+      )}
     </View>
   );
 };

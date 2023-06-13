@@ -8,9 +8,9 @@ export const SkillsTypeContent = ({
   skillTypeIcon,
   skills,
 }) => {
-  console.log("skills : ", skills);
+
   return (
-    <View style={{ marginTop: "5px", marginLeft: "5%", marginRight: "5%" }}>
+    <View style={{ marginTop: "20px", marginLeft: "5%", marginRight: "5%" }}>
       <SkillsHeader icon={skillTypeIcon} label={skillTypeLabel} />
       <View style={{ marginTop: "3px" }}>
         {skills.map((skl) => (
