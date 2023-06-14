@@ -6,7 +6,7 @@ export default {
   phone: "+33781581021",
   linkedin: "https://fr.linkedin.com/in/amine-ouchiha-608808b3",
   overview:
-    "Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu sur diffrents projets de conseils et de développements avec des aspects technologiques divers notament sur les ecosystemes Node.js/ React.js. Aujourd’hui, je suis à la recherche de nouvelles opportunités en tant que développeur et/ou lead-dev.",
+    "Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans diffrents projets de conseils et de développements avec des aspects technologiques divers, notament les ecosystemes Node.js et React.js. Aujourd’hui, je suis à la recherche de nouvelles opportunités en tant que développeur et/ou lead-dev.",
   skills: [
     {
       skillType: "Développement",
@@ -137,12 +137,12 @@ export default {
       client: " Europ Assistance.",
       tecs: " React.js, admin-on-rest, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3.",
       projectContext:
-        "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sue le projet e-claims, dans une équipe composé de 5 dévloppeur, 1 PO et un Manager. La platforme gére des demande de romboursement pour le compte de diffirent client comme AirBnb et Lastminute et transmet les demande au diffirent fourniseur de couverture.",
+        "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sue le projet e-claims, dans une équipe composée de 5 dévloppeurs, 1 PO et un Manager. La platforme gére des demandes de romboursements pour le compte de différents clients comme AirBnb ou Lastminute et les transmet aux différents fourniseurs de couverture.",
       projectMissions: [
         "- Développement et maintenace des fonctionnalités front en React.js.",
-        "- Refont du front React.js.",
-        "- Développement et maintenace des fonctionnalité back en Java et Loopback ",
-        "- Migration Loopback 2 à 3."
+        "- Refonte du front React.js.",
+        "- Développement et maintenace des fonctionnalités back en Java et Loopback.",
+        "- Migration de Loopback 2 à Loopback 3."
      ],
      },
     {
@@ -154,9 +154,9 @@ export default {
       projectContext:
         "Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.",
       projectMissions: [
-        "- Développement des fonctionnalité de configuration, gestion et remonté de données desdes IoT's.",
+        "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoT's.",
         "- Ecriture des testes d'intégrations.",
-        "- Livraison et gestions des version des différents composants applicatifs."
+        "- Livraison et gestion des versions pour les différents composants applicatifs."
       ],
     },
     {
@@ -166,7 +166,7 @@ export default {
       client: " Société Général.",
       tecs: "TypeScript, Node.js, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
       projectContext:
-        "Pour le compte de l'entreprise Société Général, et dans le cadre d’un projet intranet pour le support utilisateur et de centralisation des services Société Général, je suis intervenu en tant que développeur dans un train avec 4 équipes de développement dont une équipe de 5 personnes composé de 3 dev un PR et un Scrum.",
+        "Pour le compte de l'entreprise Société Général, et dans le cadre d’un projet intranet pour le support utilisateur et de centralisation des services Société Général, je suis intervenu en tant que développeur dans un train avec 4 équipes de développements dont une équipe de 5 personnes composée de 3 dev, un PR et un Scrum.",
       projectMissions: [
         "- Participation aux différentes cérémonies SAFE.",
         "- Développement des fonctionnalités back et front.",
@@ -176,9 +176,9 @@ export default {
     {
       experienceLabel: "Edifixio",
       experiencetag: "Mars 2016 - Oct 2019",
-      tecs: "Node.js, TypeScript, Angular, : React.js,Heroku Paas, PostgreSQL, Salesforce, Talend ETL, IBM MDM Infosphere, Java EE, Jalios CMS.",
+      tecs: "Node.js, TypeScript, Angular, React.js, Heroku Paas, PostgreSQL, Salesforce, Talend ETL, IBM MDM Infosphere, Java EE, Jalios CMS.",
       projectContext:
-        "Pour le compte de la SI Edifixio je suis intérvenu sur des missions diverse pour le compte de plusieur Client comme l'inter mutuelle assistance (IMA) ainsi que Carrefour et la COFREND.",
+        "Au sein de la SI Edifixio, je suis intérvenu sur des missions diverses pour le compte de plusieurs Clients comme l'inter mutuelle assistance (IMA), Carrefour ou encore la COFREND.",
       projectMissions: [
         "- Réalisation d'une application de dépannage d’urgence.",
         "- Maintenance du référentiel produit Carrefour .",
