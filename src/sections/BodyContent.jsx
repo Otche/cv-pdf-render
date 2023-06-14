@@ -9,7 +9,7 @@ import { ExperienceHeader } from "../components/ExperienceHeader";
 // Create styles
 const bodyContentStyles = StyleSheet.create({
   height: "100%",
-  width: "70%",
+  width: "72%",
 });
 export const BodyContent = (props) => {
   const { pagenum } = props;

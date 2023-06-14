@@ -36,7 +36,7 @@ export const SkillsHeader = ({icon , label}) => {
         }}
       >
         <Image
-          style={{ height: "100%", width: "100%", borderRadius: "100%" }}
+          style={{ borderRadius: "100%" , padding: "4px"}}
           src={getFileData(icon)}
         />
       </View>

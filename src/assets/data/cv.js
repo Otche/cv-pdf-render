@@ -10,7 +10,7 @@ export default {
   skills: [
     {
       skillType: "Développement",
-      skillTypeIcon: require("../images/profil-image.png"),
+      skillTypeIcon: require("../images/software.png"),
       skillsList: [
         {
           skillLabel: "JavaScript, Typescript ",
@@ -35,8 +35,8 @@ export default {
       ],
     },
     {
-      skillType: "Data Base",
-      skillTypeIcon: require("../images/profil-image.png"),
+      skillType: "Databases",
+      skillTypeIcon: require("../images/database.png"),
       skillsList: [
         {
           skillLabel: "SQL, Postgresql, MySQL",
@@ -57,8 +57,8 @@ export default {
       ],
     },
     {
-      skillType: "DevTools",
-      skillTypeIcon: require("../images/profil-image.png"),
+      skillType: "Dev tools",
+      skillTypeIcon: require("../images/visual-studio.png"),
       skillsList: [
         {
           skillLabel: "VSCode",
@@ -76,7 +76,7 @@ export default {
     },
     {
       skillType: "DevOps",
-      skillTypeIcon: require("../images/profil-image.png"),
+      skillTypeIcon: require("../images/devops.png"),
       skillsList: [
         {
           skillLabel: "Docker / Docker-compose",
@@ -98,7 +98,7 @@ export default {
     },
     {
       skillType: "Mobile",
-      skillTypeIcon: require("../images/profil-image.png"),
+      skillTypeIcon: require("../images/android-logo.png"),
       skillsList: [
         {
           skillLabel: "React Native",
@@ -116,7 +116,7 @@ export default {
     },
     {
       skillType: "Anglais",
-      skillTypeIcon: require("../images/profil-image.png"),
+      skillTypeIcon: require("../images/english-language.png"),
       skillsList: [
         {
           skillLabel: "Orale",

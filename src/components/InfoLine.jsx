@@ -5,12 +5,8 @@ import { getFileData } from "../utils/read-file";
 
 export const InfoLine = (props) => {
     const {text, icon, linkType} =  props
-    return <View style={{ marginTop: "2px" }} {...props} >
-      <Text
-        style={{
-          fontSize: "10px",
-        }}
-      >
+    return <View style={{ marginTop: "3px" }} {...props} >
+      <Text>
         <Image
           style={{
             height: "15px",

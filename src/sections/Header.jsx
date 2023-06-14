@@ -6,7 +6,7 @@ import locationIcon from "../assets/images/location.png";
 import phoneIcon from "../assets/images/phone.png";
 import emailIcon from "../assets/images/email.png";
 import linkedinIcon from "../assets/images/linkedin.png";
-import profileImage from "../assets/images/profil-image.png";
+import profileImage from "../assets/images/profil-img.png";
 
 import cvData from "../assets/data/cv";
 
@@ -56,7 +56,6 @@ const ContactRender = (props) => {
       <InfoLine text={adresse} icon={locationIcon} />
       <InfoLine text={phone} icon={phoneIcon} linkType={"tel"} />
       <InfoLine text={email} icon={emailIcon} linkType={"mailto"} />
-      <InfoLine text={linkedin} icon={linkedinIcon} linkType={"url"} />
     </View>
   );
 };
@@ -64,7 +63,7 @@ const ContactRender = (props) => {
 const ImageProfilRender = ( props) => (
   <View
     style={{
-      width: "20%",
+      width: "15%",
       height: "100%",
     }}
     {...props}
@@ -72,22 +71,22 @@ const ImageProfilRender = ( props) => (
     <View
       style={{
         width: "100%",
-        height: "10%",
+        height: "3%",
       }}
     ></View>
     <View  style={{
           width: "100%",
-          height: "80%",
+          height: "93%",
           borderColor: "#12B4E4",
           borderStyle: "solid",
           borderWidth: "2px",
           borderLeftWidth: "3px",
           borderRightWidth: "3px",
-          borderRadius: "3px",
+          borderRadius: "5px",
         }}>
       <Image
         style={{
-          marginLeft :"-1px",
+          marginLeft :"-0.5px",
           width: "102%",
           height: "102%",
           borderRadius: "3px",
@@ -100,7 +99,7 @@ const ImageProfilRender = ( props) => (
     <View
       style={{
         width: "100%%",
-        height: "10%",
+        height: "4%",
       }}
     ></View>
   </View>
@@ -110,16 +109,18 @@ const LeftSectionRender = (props) => {
   return (
     <View
       style={{
-        width: "30%",
+        width: "27%",
         height: "100%",
         marginLeft: "5px",
         paddingRight: "5px",
+        marginTop : "5px",
       }}
       {...props}
     >
       <IdentiyRender/>
       <ContactRender style = {{
-        marginTop : "10px"
+        marginTop : "10px",
+        fontSize : "9px"
       }}/>
     </View>
   );
@@ -129,10 +130,11 @@ const RigthSectionRender = (props) => {
   return (
     <View
       style={{
-        width: "50%",
+        width: "55%",
         height: "100%",
         marginRight: "5px",
-        marginLeft: "5px",
+        marginLeft: "10px",
+        marginTop : "5px",
       }}
       {...props}
     >
@@ -142,6 +144,7 @@ const RigthSectionRender = (props) => {
         fontSize : "10px",
         marginRight :"5px",
         lineHeight : "1.5px",
+        textAlign : "justify"
       }}>
         {overview}
       </Text>
@@ -152,7 +155,7 @@ const RigthSectionRender = (props) => {
 
 // Create styles
 const headerStyles = StyleSheet.create({
-  height: "17%",
+  height: "15%",
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#58585A",

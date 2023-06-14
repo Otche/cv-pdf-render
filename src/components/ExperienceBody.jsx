@@ -92,6 +92,7 @@ export const ExperienceBody = ({
             fontFamily: "Times-Roman",
             fontSize: "9px",
             paddingLeft: "10px",
+            textAlign: "justify"
           }}
         >
           {projectContext}

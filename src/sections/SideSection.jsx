@@ -9,7 +9,7 @@ import cvData from "../assets/data/cv";
 // Create styles
 const sideSectionStyles = StyleSheet.create({
   height: "100%",
-  width: "30%",
+  width: "28%",
   display: "flex",
   backgroundColor: "#58585A",
   color: "white",
