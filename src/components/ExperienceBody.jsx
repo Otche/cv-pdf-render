@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text } from "@react-pdf/renderer";
-import { ExperienceHeader } from "../components/ExperienceHeader";
 import { List } from "../components/List";
 
 export const ExperienceBody = ({
@@ -11,14 +10,17 @@ export const ExperienceBody = ({
   projectMissions,
 }) => {
   return (
-    <View>
+    <View style={{
+      marginBottom : "20px"
+    }}>
+     
       <View
         style={{
           display: "flex",
           flexDirection: "row",
         }}
       >
-       { projectName && <Text
+       {  projectName && <Text
           style={{
             fontSize: "10px",
             color: "#58585A",

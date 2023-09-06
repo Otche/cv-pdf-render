@@ -131,73 +131,171 @@ export default {
   ],
   experiences: [
      {
+      style : {
+        marginTop : "40px"
+      },
       experienceLabel: "Europ Assistance",
       experiencetag: "Jui 2022 - aujourd'hui",
-      projectName: " E-claims.",
-      client: " Europ Assistance.",
-      tecs: " React.js, admin-on-rest, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3.",
-      projectContext:
-        "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de 5 développeurs, 1 PO et un Manager. La plateforme gère des demandes de remboursements pour le compte de différents clients comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couverture.",
-      projectMissions: [
-        "- Développement et maintenance des fonctionnalités front en React.js.",
-        "- Refonte du front React.js.",
-        "- Développement et maintenance des fonctionnalités back en Java et Loopback.",
-        "- Migration de Loopback 2 à Loopback 3."
-     ],
+      projects : [{
+        projectName: " E-claims.",
+        client: " Europ Assistance.",
+        tecs: " React.js, admin-on-rest, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3.",
+        projectContext:
+          "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de 5 développeurs, 1 PO et un Manager. La plateforme gère des demandes de remboursements pour le compte de différents clients comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couverture.",
+        projectMissions: [
+          "- Développement et maintenance des fonctionnalités front en React.js.",
+          "- Refonte du front React.js.",
+          "- Développement et maintenance des fonctionnalités back en Java et Loopback.",
+          "- Migration de Loopback 2 à Loopback 3."
+       ],
+      }],
+     
      },
     {
+      style : {
+        marginTop : "20px"
+      },
       experienceLabel: "ITNovem (SNCF)",
       experiencetag: "Jan 2021 - Fév 2022",
-      projectName: " e-IOT.",
-      client: " ITNovem (SNCF).",
-      tecs: "Nest.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud.",
-      projectContext:
-        "Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.",
-      projectMissions: [
-        "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoT's.",
-        "- Écriture des tests d'intégrations.",
-        "- Livraison et gestion des versions pour les différents composants applicatifs."
-      ],
+      projects : [{
+        projectName: " e-IOT.",
+        client: " ITNovem (SNCF).",
+        tecs: "Nest.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud.",
+        projectContext:
+          "Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.",
+        projectMissions: [
+          "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoT's.",
+          "- Écriture des tests d'intégrations.",
+          "- Livraison et gestion des versions pour les différents composants applicatifs."
+        ],
+      }],
+    
     },
     {
+      style : {
+        marginTop : "20px"
+      },
       experienceLabel: "Société Générale",
       experiencetag: "Déc 2019 - Déc 2020",
-      projectName: " My Digital Workplace.",
-      client: " Société Général.",
-      tecs: "TypeScript, Node.js, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
-      projectContext:
-        "Pour le compte de l'entreprise Société Général, et dans le cadre d’un projet intranet pour le support utilisateur et de centralisation des services Société Général, je suis intervenu en tant que développeur dans un train avec 4 équipes de développements dont une équipe de 5 personnes composée de 3 dev, un PR et un Scrum.",
-      projectMissions: [
-        "- Participation aux différentes cérémonies SAFE.",
-        "- Développement des fonctionnalités back et front.",
-        "- Tirage de release et participation à la mise en production.",
-      ],
+      projects : [{
+        projectName: " My Digital Workplace.",
+        client: " Société Général.",
+        tecs: "TypeScript, Node.js, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
+        projectContext:
+          "Pour le compte de l'entreprise Société Général, et dans le cadre d’un projet intranet pour le support utilisateur et de centralisation des services Société Général, je suis intervenu en tant que développeur dans un train avec 4 équipes de développements dont une équipe de 5 personnes composée de 3 dev, un PR et un Scrum.",
+        projectMissions: [
+          "- Participation aux différentes cérémonies SAFE.",
+          "- Développement des fonctionnalités back et front.",
+          "- Tirage de release et participation à la mise en production.",
+        ],
+      }],
+     
     },
     {
       experienceLabel: "Edifixio",
       experiencetag: "Mars 2016 - Oct 2019",
-      tecs: "Node.js, TypeScript, Angular, React.js, Heroku Paas, PostgreSQL, Salesforce, Talend ETL, IBM MDM Infosphere, Java EE, Jalios CMS.",
-      projectContext:
-        "Au sein de la SI Edifixio, je suis intervenu sur diverses missions pour le compte de plusieurs Clients comme l'inter mutuelle assistance (IMA), Carrefour ou encore la COFREND..",
-      projectMissions: [
-        "- Réalisation d'une application de dépannage d’urgence.",
-        "- Maintenance du référentiel produit Carrefour .",
-        "- Réalisation d'une Plateforme web et collaborative pour le compte de la COFREND avec Jalios CMS.",
+      projects : [
+        {
+          projectName: " Référentiel produit Carrefour.",
+          client: " Carrefour.",
+          tecs: "IBM MDM Infosphere, Java 8, Linux.",
+          projectContext:
+            `Pour le compte de l'entreprise Carrefour, et dans le cadre d’un
+            projet référentiel de données utilisant la solution IBM MDM, je
+            suis intervenu dans une équipe de six personnes en tant que
+            consultant développeur Java sur la solution.`,
+          projectMissions: [
+            "- Mise en place de scripts TrigoScript pour import/ export de données.",
+            "- Étude et Réécriture de routine d'import / export Java dans le but d'optimiser les performances.",
+            "- Réalisation d'une documentation sur l'architecture applicative et de déploiement du projet.",
+          ],
+        },
+        {
+          projectName: " POC Intentionality.",
+          client: " Interne Edifixio.",
+          tecs: "React.js, Redux, IBM Bluemix,Composants Bootstrap.",
+          projectContext:
+            `Dans un projet en interne de création d'une IA pour la
+            prédiction d'impact sur les réseaux sociaux, j'ai participé à la
+            réalisation du front de l'application au sein d'une équipe de
+            quatre personnes.`,
+          projectMissions: [
+            "- Conception, découpage et réalisation des composants React.js .",
+            "- Navigation et stockage du contexte.",
+            "- Appel des services distant et intégration des services sur le front.",
+          ],
+        },
+        {
+          projectName: " Application React Native - Salesforce (CXO).",
+          client: " Salesforce.",
+          tecs: "React Native, Salesforce, Apex, Push notification, Jest.",
+          projectContext:
+            `Pour le compte d'un projet pilote en partenariat avec
+            Salesforce, j'ai participé à la réalisation et à la maintenance de
+            certaines fonctionnalités d'un réseau sociale d'entreprise au
+            sein d'une équipe de quatre personnes.`,
+          projectMissions: [
+            "- Migration des services React native coté Back (APEX) pour réduire le nombre d'appels intermédiaires serveur.",
+            "- Test Unitaire de services (Code Covrage Salesforce).",
+            "- Mise en place des Push notifications et création des trigguers APEX pour les intercepter.",
+            "- Teste de rendering des composants ReactNative avec Jest et Enzyme.",
+          ],
+        },
+        {
+          projectName: " Plateforme de dépannage en ligne.",
+          client: " Inter Mutuelle Assistance (IMA).",
+          tecs: `Node.js, TypeScript, Angular,
+          AngularJs, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku,
+          PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de
+          paiment Sogenactif.`,
+          projectContext:
+            `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à
+            Niort, on a réalisé une application de dépannage d’urgence en
+            ligne dans les domaines de l’automobile et de l’habitation. Sur
+            ce projet, j’ai mené une mission de développeur puis de tech-lead.`,
+          projectMissions: [
+            "- Conception des services web.",
+            "- Conception et implémentation des clients web.",
+            "- Administration des environnements sur Heroku PaaS.",
+            "- Mise en place d’un déploiement avec Heroku flow et des remotes views.",
+          ],
+        },
+        {
+          projectName: " Plateforme web et collaborative Jalios CMS.",
+          client: " COFREND.",
+          tecs: `Jalios - Java JEE - JavaScript - JQuery.`,
+          projectContext:
+            `Pour le compte de la Confédération Française pour les Essais
+            Non Destructifs (COFREND), et au sein d'une équipe de 3
+            personnes, j'ai participé à la réalisation d'une application web
+            collaborative.`,
+          projectMissions: [
+            "- Création de types de contenus et gestion de leurs affichages.",
+            "- Création de types de formulaires et gestion des règles métiers.",
+            "- Création des pages portails et gestion de la navigation dans le site.",
+            "- Interfaçage avec un service de paiement en ligne (avec la solution Monitico).",
+          ],
+        }
       ],
+        dislayPage : 2
+    
     }
     ,
     {
-      experienceLabel: "Edifixio (Stage)",
+      experienceLabel: "Edifixio - Stage fin d'études",
       experiencetag: "Mai 2015 - Nov 2016",
-      projectName : " Couche de services ElasticSearch.",
-      tecs: "Java EE, Spring (Core, MVC,AOP), ElasticSearch.",
-      projectContext:
-        "Pour mon stage de fin d'études, j'ai eu à réaliser une API configurable en java pour interroger un index Elasticsearch et générer des facettes dynamiques de recherche.",
-      projectMissions: [
-        "- Étude de l’état de l’art sur les moteurs de recherches.",
-        "- Conception et réalisation d'une API configurable utilisant des facettes sur ElasticSearch en Java.",
-      ],
-      dislayPage : 2
+      projects : [{
+        projectName : " Couche de services ElasticSearch.",
+        tecs: "Java EE, Spring (Core, MVC,AOP), ElasticSearch.",
+        projectContext:
+          "Pour mon stage de fin d'études, j'ai eu à réaliser une API configurable en java pour interroger un index Elasticsearch et générer des facettes dynamiques de recherche.",
+        projectMissions: [
+          "- Étude de l’état de l’art sur les moteurs de recherches.",
+          "- Conception et réalisation d'une API configurable utilisant des facettes sur ElasticSearch en Java.",
+        ],
+      }],
+     
+      dislayPage : 3
     }
   ],
 };

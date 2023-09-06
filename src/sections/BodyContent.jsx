@@ -41,30 +41,11 @@ export const BodyContent = (props) => {
           }}
         >
           {experiences.map((expr) => {
-            const {
-              experienceLabel,
-              experiencetag,
-              projectName,
-              client,
-              tecs,
-              projectContext,
-              projectMissions,
-            } = expr;
-            return (
-              <ExperienceSection
-                experienceLabel={experienceLabel}
-                experiencetag={experiencetag}
-                projectName={projectName}
-                client={client}
-                tecs={tecs}
-                projectContext={projectContext}
-                projectMissions={projectMissions}
-              />
-            );
+            return <ExperienceSection {... expr}/> 
           })}
         </View>
       </View>
-      {pagenum === 2 && (
+      {pagenum === 3 && (
         <View>
           <View
             style={{

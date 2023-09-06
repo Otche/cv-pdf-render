@@ -26,7 +26,9 @@ export const Cv = () => (
     </Page>
     <Page size={FORMAT} style={rootStyle}>
       <Body pagenum={2}/>
-   
+    </Page>
+    <Page size={FORMAT} style={rootStyle}>
+      <Body pagenum={3}/>
     </Page>
   </Document>
 );
