@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { SectionBadge } from "../components/SectionBadge";
 import { ExperienceSection } from "./ExperienceSection";
-
-import cvData from "../assets/data/cv";
 import { ExperienceHeader } from "../components/ExperienceHeader";
+import { DataContext } from "./Cv";
 
 // Create styles
 const bodyContentStyles = StyleSheet.create({
@@ -12,8 +11,10 @@ const bodyContentStyles = StyleSheet.create({
   width: "72%",
 });
 export const BodyContent = (props) => {
+  const data = useContext(DataContext);
+
   const { pagenum } = props;
-  const experiences = cvData.experiences.filter(
+  const experiences = data.experiences.filter(
     (e) => e.dislayPage === pagenum || (!e.dislayPage && pagenum === 1)
   );
   return (

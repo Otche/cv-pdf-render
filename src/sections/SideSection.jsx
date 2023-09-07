@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { SectionBadge } from "../components/SectionBadge";
 import { SkillsTypeContent } from "../components/SkillsTypeContent";
 import cvData from "../assets/data/cv";
+import { DataContext } from "./Cv";
 
 
 
@@ -18,8 +19,9 @@ const sideSectionStyles = StyleSheet.create({
   borderRightWidth: "2px",
 });
 export const SideSection = (props) => {
+  const data = useContext(DataContext);
   const {pagenum} = props;
-  const skills = cvData.skills.filter(e => e.dislayPage === pagenum || (!e.dislayPage && pagenum === 1 ) );
+  const skills = data.skills.filter(e => e.dislayPage === pagenum || (!e.dislayPage && pagenum === 1 ) );
   return (
     <View style={sideSectionStyles} {...props}>
       {pagenum === 1  && <View

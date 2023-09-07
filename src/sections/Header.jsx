@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, View, StyleSheet, Image } from "@react-pdf/renderer";
 import { InfoLine } from "../components/InfoLine";
 import { getFileData } from "../utils/read-file";
 import locationIcon from "../assets/images/location.png";
 import phoneIcon from "../assets/images/phone.png";
 import emailIcon from "../assets/images/email.png";
-import linkedinIcon from "../assets/images/linkedin.png";
 import profileImage from "../assets/images/profil-img.png";
+import { DataContext } from "./Cv";
 
-import cvData from "../assets/data/cv";
 
-const {age, overview, phone, linkedin, email, name, adresse}  = cvData;
 
-const IdentiyRender = (props ) => (
-  <View style={{
+const IdentiyRender = (props ) => {
+  const data = useContext(DataContext);
+  const {age, name}  = data;
+  return <View style={{
     fontFamily: "Times-Italic",
     fontSize: "15px",
     marginTop : "5px"
@@ -31,10 +31,10 @@ const IdentiyRender = (props ) => (
       </Text>
     </Text>
   </View>
-);
+}
 
-const JobNameRender = (props) => (
-  <Text
+const JobNameRender = (props) => {
+  return <Text
     style={{
       fontFamily: "Times-Italic",
       fontSize: "15px",
@@ -47,10 +47,12 @@ const JobNameRender = (props) => (
   >
     Développeur full stack
   </Text>
-);
+}
 
 
 const ContactRender = (props) => {
+  const data = useContext(DataContext);
+  const { phone, email,adresse}  = data;
   return (
     <View {...props}>
       <InfoLine text={adresse} icon={locationIcon} />
@@ -127,6 +129,8 @@ const LeftSectionRender = (props) => {
 };
 
 const RigthSectionRender = (props) => {
+  const data = useContext(DataContext);
+  const {overview}  = data;
   return (
     <View
       style={{
@@ -163,10 +167,10 @@ const headerStyles = StyleSheet.create({
 
 });
 // Create Document Component
-export const Header = ( props ) => (
-  <View style={headerStyles} {... props}>
+export const Header = ( props ) => {
+  return <View style={headerStyles} {... props } >
     <LeftSectionRender/>
     <ImageProfilRender/>
     <RigthSectionRender/>
   </View>
-);
+};

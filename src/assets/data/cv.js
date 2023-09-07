@@ -132,48 +132,57 @@ export default {
   experiences: [
      {
       style : {
-        marginTop : "40px"
+        marginTop : "10px"
       },
       experienceLabel: "Europ Assistance",
       experiencetag: "Jui 2022 - aujourd'hui",
       projects : [{
-        projectName: " E-claims.",
+        projectName: " E-Claims.",
         client: " Europ Assistance.",
-        tecs: " React.js, admin-on-rest, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3.",
+        tecs: " React.js, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3, loopback4",
         projectContext:
-          "Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de 5 développeurs, 1 PO et un Manager. La plateforme gère des demandes de remboursements pour le compte de différents clients comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couverture.",
+          `Pour le compte d'Europ Assistance, j'interviens en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de 5 développeurs, 1 PO et un Manager.
+          La plateforme gère des demandes de remboursements pour le compte de différents clients comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures
+          (assurance).
+          Le projet a une partie back-office (E-conf) ou on peux configurer les différentes fonctionnalités du front-office.
+          Le framwork de la gestion du projet est un scrum très alléger (daily / poker planing)`,
         projectMissions: [
-          "- Développement et maintenance des fonctionnalités front en React.js.",
-          "- Refonte du front React.js.",
-          "- Développement et maintenance des fonctionnalités back en Java et Loopback.",
-          "- Migration de Loopback 2 à Loopback 3."
+          "- Développement et maintenance des fonctionnalités front en React.js .",
+          "- Refonte du front React.js .",
+          "- Développement et maintenance des fonctionnalités backend Java .",
+          "- Développement et maintenance des fonctionnalités back-office admin-on-rest / Loopback 3 .",
+          "- Migration de Loopback 3 à Loopback 4 ."
        ],
       }],
      
      },
     {
       style : {
-        marginTop : "20px"
+        marginTop : "10px"
       },
       experienceLabel: "ITNovem (SNCF)",
       experiencetag: "Jan 2021 - Fév 2022",
       projects : [{
         projectName: " e-IOT.",
         client: " ITNovem (SNCF).",
-        tecs: "Nest.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud.",
+        tecs: "Nest.js, Node.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT.",
         projectContext:
-          "Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.",
+          `Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés,
+          je suis intervenu en tant que développeur au sein d'une équipe de 7 personnes en mode combo. 
+          La platfome pérmet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion et
+          de décodé leur flux de données, puis de les regrouper en ensemble logique et d'utiliser leurs données pour faire des calculs.`,
         projectMissions: [
+          "- Développement des décodeurs.",
           "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoT's.",
-          "- Écriture des tests d'intégrations.",
-          "- Livraison et gestion des versions pour les différents composants applicatifs."
+          "- Écriture des tests d'intégrations end-to-end en utilisant.Robot-Framwork",
+          "-  Tirage de versions des différents composants applicatifs."
         ],
       }],
     
     },
     {
       style : {
-        marginTop : "20px"
+        marginTop : "10px"
       },
       experienceLabel: "Société Générale",
       experiencetag: "Déc 2019 - Déc 2020",
@@ -182,7 +191,10 @@ export default {
         client: " Société Général.",
         tecs: "TypeScript, Node.js, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
         projectContext:
-          "Pour le compte de l'entreprise Société Général, et dans le cadre d’un projet intranet pour le support utilisateur et de centralisation des services Société Général, je suis intervenu en tant que développeur dans un train avec 4 équipes de développements dont une équipe de 5 personnes composée de 3 dev, un PR et un Scrum.",
+          `Pour le compte de l'entreprise Société Générale, et dans le cadre d’un projet intranet pour
+          le support utilisateur et de centralisation des services Société Générale,
+          je suis intervenu en tant que développeur, dans un train avec 4 équipes de développements,
+          dont une équipe de 5 personnes composée de 3 dev, un PR et un Scrum.`,
         projectMissions: [
           "- Participation aux différentes cérémonies SAFE.",
           "- Développement des fonctionnalités back et front.",
@@ -192,7 +204,10 @@ export default {
      
     },
     {
-      experienceLabel: "Edifixio",
+      style : {
+        marginTop : "10px"
+      },
+      experienceLabel: "EDIFIXIO (CDI)",
       experiencetag: "Mars 2016 - Oct 2019",
       projects : [
         {
@@ -221,7 +236,6 @@ export default {
             quatre personnes.`,
           projectMissions: [
             "- Conception, découpage et réalisation des composants React.js .",
-            "- Navigation et stockage du contexte.",
             "- Appel des services distant et intégration des services sur le front.",
           ],
         },
@@ -236,16 +250,15 @@ export default {
             sein d'une équipe de quatre personnes.`,
           projectMissions: [
             "- Migration des services React native coté Back (APEX) pour réduire le nombre d'appels intermédiaires serveur.",
-            "- Test Unitaire de services (Code Covrage Salesforce).",
+            "- Test Unitaire de services (Code Covrage Salesforce) et des composants ReactNative avec Jest et Enzyme..",
             "- Mise en place des Push notifications et création des trigguers APEX pour les intercepter.",
-            "- Teste de rendering des composants ReactNative avec Jest et Enzyme.",
           ],
         },
         {
           projectName: " Plateforme de dépannage en ligne.",
           client: " Inter Mutuelle Assistance (IMA).",
           tecs: `Node.js, TypeScript, Angular,
-          AngularJs, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku,
+          Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku,
           PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de
           paiment Sogenactif.`,
           projectContext:
@@ -282,16 +295,16 @@ export default {
     }
     ,
     {
-      experienceLabel: "Edifixio - Stage fin d'études",
+      experienceLabel: "EDIFIXIO - Stage fin d'études",
       experiencetag: "Mai 2015 - Nov 2016",
       projects : [{
-        projectName : " Couche de services ElasticSearch.",
-        tecs: "Java EE, Spring (Core, MVC,AOP), ElasticSearch.",
+        projectName : " Couche de services Elasticsearch.",
+        tecs: "Java EE, Spring (Core, MVC,AOP), Elasticsearch.",
         projectContext:
           "Pour mon stage de fin d'études, j'ai eu à réaliser une API configurable en java pour interroger un index Elasticsearch et générer des facettes dynamiques de recherche.",
         projectMissions: [
           "- Étude de l’état de l’art sur les moteurs de recherches.",
-          "- Conception et réalisation d'une API configurable utilisant des facettes sur ElasticSearch en Java.",
+          "- Conception et réalisation d'une API configurable utilisant des facettes sur Elasticsearch en Java.",
         ],
       }],
      
