@@ -4,7 +4,7 @@ import { ProgressBar } from "./ProgressBar";
 
 export const SkillWithProgress = ({ skillLabel, skillProgress }) => {
   return (
-    <View style={{marginTop :"5px"}}>
+    <View style={{marginTop :"8px"}}>
       <Text style={{color :"white", fontSize: "10px"}}>
         {skillLabel}
       </Text>

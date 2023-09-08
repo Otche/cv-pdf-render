@@ -45,7 +45,7 @@ const JobNameRender = (props) => {
     }}
     {... props}
   >
-    Développeur full stack
+    Consultant développeur full-stack
   </Text>
 }
 

@@ -4,9 +4,8 @@ export default {
   email: "ouchihaamine@gmail.com",
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
-  linkedin: "https://fr.linkedin.com/in/amine-ouchiha-608808b3",
   overview:
-    "Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans diffrents projets de conseils et de développements avec des aspects technologiques divers, notament les ecosystemes Node.js et React.js. Aujourd’hui, je suis à la recherche de nouvelles opportunités en tant que développeur et/ou lead-dev.",
+    `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans diffrents projets de conseils et de développements avec des aspects technologiques divers, notament les ecosystemes Node.js et React.js .Aujourd’hui, je suis à la recherche de nouvelles opportunités en tant que développeur et/ou lead-dev.`,
   skills: [
     {
       skillType: "Développement",
@@ -14,15 +13,23 @@ export default {
       skillsList: [
         {
           skillLabel: "JavaScript, Typescript ",
-          skillProgress: 90,
-        },
-        {
-          skillLabel: "React.js ",
           skillProgress: 85,
         },
         {
-          skillLabel: "Node.js, Express, Nest.js",
+          skillLabel: "React.js ",
+          skillProgress: 80,
+        },
+        {
+          skillLabel: "Node.js",
           skillProgress: 75,
+        },
+        {
+          skillLabel: "Express.js",
+          skillProgress: 70,
+        },
+        {
+          skillLabel: "Nest.js",
+          skillProgress: 70,
         },
         {
           skillLabel: "Java",
@@ -39,8 +46,16 @@ export default {
       skillTypeIcon: require("../images/database.png"),
       skillsList: [
         {
-          skillLabel: "SQL, Postgresql, MySQL",
+          skillLabel: "SQL",
           skillProgress: 70,
+        },
+        {
+          skillLabel: "Postgresql/ PGSQL",
+          skillProgress: 60,
+        },
+        {
+          skillLabel: "MySQL ",
+          skillProgress: 55,
         },
         {
           skillLabel: "Mongodb",
@@ -66,10 +81,22 @@ export default {
         },
         {
           skillLabel: "Git",
+          skillProgress: 70,
+        },
+        {
+          skillLabel: "Webpack",
+          skillProgress: 60,
+        },
+        {
+          skillLabel: "Maven",
           skillProgress: 50,
         },
         {
-          skillLabel: "Gitlab , BitBuckets",
+          skillLabel: "BitBuckets",
+          skillProgress: 50,
+        },
+        {
+          skillLabel: "Gitlab",
           skillProgress: 50,
         },
       ],
@@ -79,22 +106,35 @@ export default {
       skillTypeIcon: require("../images/devops.png"),
       skillsList: [
         {
-          skillLabel: "Docker / Docker-compose",
+          skillLabel: "Docker",
           skillProgress: 70,
         },
         {
-          skillLabel: "Kubernate",
-          skillProgress: 50,
+          skillLabel: "Linux / Shell",
+          skillProgress: 70,
         },
         {
           skillLabel: "Jenkins",
           skillProgress: 50,
         },
         {
+          skillLabel: "Kubernate",
+          skillProgress: 40,
+        },
+        {
           skillLabel: "Terraform",
-          skillProgress: 50,
+          skillProgress: 40,
+        },
+        {
+          skillLabel: "Heroku PaaS",
+          skillProgress: 40,
+        },
+        {
+          skillLabel: "AWS",
+          skillProgress: 30,
         },
       ],
+      dislayPage : 2
     },
     {
       skillType: "Mobile",
@@ -102,7 +142,7 @@ export default {
       skillsList: [
         {
           skillLabel: "React Native",
-          skillProgress: 70,
+          skillProgress: 60,
         },
         {
           skillLabel: "Android",
@@ -110,9 +150,49 @@ export default {
         },
         {
           skillLabel: "IOS",
+          skillProgress: 40,
+        },
+      ],
+    },
+    ,
+    {
+      skillType: "Compétence divers",
+      skillTypeIcon: require("../images/more.png"),
+      skillsList: [
+        {
+          skillLabel: "Scrum",
+          skillProgress: 70,
+        },
+        {
+          skillLabel: "REST API",
+          skillProgress: 70,
+        },
+        {
+          skillLabel: "Test unitaire",
+          skillProgress: 70,
+        },
+        {
+          skillLabel: "Test d'integration",
+          skillProgress: 70,
+        },
+        {
+          skillLabel: "GraphQL",
+          skillProgress: 40,
+        },
+        {
+          skillLabel: "Salceforce Apex / Ligthning",
+          skillProgress: 40,
+        },
+        {
+          skillLabel: "PHP",
+          skillProgress: 50,
+        },
+        {
+          skillLabel: "C/C++",
           skillProgress: 50,
         },
       ],
+      dislayPage : 2
     },
     {
       skillType: "Anglais",
@@ -127,6 +207,7 @@ export default {
           skillProgress: 50,
         },
       ],
+      dislayPage : 2
     },
   ],
   experiences: [
@@ -212,7 +293,7 @@ export default {
       projects : [
         {
           projectName: " Référentiel produit Carrefour.",
-          client: " Carrefour.",
+          client: " Carrefour. Fév-Sept 2019",
           tecs: "IBM MDM Infosphere, Java 8, Linux.",
           projectContext:
             `Pour le compte de l'entreprise Carrefour, et dans le cadre d’un
@@ -227,7 +308,7 @@ export default {
         },
         {
           projectName: " POC Intentionality.",
-          client: " Interne Edifixio.",
+          client: " Interne Edifixio. Oct 2018 - Jan 2019",
           tecs: "React.js, Redux, IBM Bluemix,Composants Bootstrap.",
           projectContext:
             `Dans un projet en interne de création d'une IA pour la
@@ -241,7 +322,7 @@ export default {
         },
         {
           projectName: " Application React Native - Salesforce (CXO).",
-          client: " Salesforce.",
+          client: " Salesforce. Aout-Oct 2018",
           tecs: "React Native, Salesforce, Apex, Push notification, Jest.",
           projectContext:
             `Pour le compte d'un projet pilote en partenariat avec
@@ -256,7 +337,7 @@ export default {
         },
         {
           projectName: " Plateforme de dépannage en ligne.",
-          client: " Inter Mutuelle Assistance (IMA).",
+          client: " Inter Mutuelle Assistance (IMA). Mai 2017 - Juil 2018",
           tecs: `Node.js, TypeScript, Angular,
           Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku,
           PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de
@@ -275,7 +356,7 @@ export default {
         },
         {
           projectName: " Plateforme web et collaborative Jalios CMS.",
-          client: " COFREND.",
+          client: " COFREND. Mars 2016 - Jan 2017",
           tecs: `Jalios - Java JEE - JavaScript - JQuery.`,
           projectContext:
             `Pour le compte de la Confédération Française pour les Essais
