@@ -5,206 +5,219 @@ export default {
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
   overview:
-    `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans diffrents projets de conseils et de développements avec des aspects technologiques divers, notament les ecosystemes Node.js et React.js .Aujourd’hui, je suis à la recherche de nouvelles opportunités en tant que développeur et/ou lead-dev.`,
+    `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans diffrents projets de conseils et de développements, avec des contexts technologiques et organisationnels divers, notament les ecosystemes Node.js et React.js et Agile. 
+    Aujourd’hui, je suis à la recherche de nouvelles opportunité.`,
   skills: [
     {
-      skillType: "Développement",
-      skillTypeIcon: require("../images/software.png"),
+      type: "Développement",
+      icon: require("../images/software.png"),
       skillsList: [
         {
-          skillLabel: "JavaScript, Typescript ",
-          skillProgress: 85,
+          label: "JavaScript / Typescript ",
+          progress: 85,
         },
         {
-          skillLabel: "React.js ",
-          skillProgress: 80,
+          label: "React.js ",
+          progress: 80,
         },
         {
-          skillLabel: "Node.js",
-          skillProgress: 75,
+          label: "Node.js",
+          progress: 75,
         },
         {
-          skillLabel: "Express.js",
-          skillProgress: 70,
+          label: "Express.js",
+          progress: 70,
         },
         {
-          skillLabel: "Nest.js",
-          skillProgress: 70,
+          label: "Nest.js",
+          progress: 70,
         },
         {
-          skillLabel: "Java",
-          skillProgress: 60,
+          label: "Java",
+          progress: 60,
         },
         {
-          skillLabel: "Python",
-          skillProgress: 40,
+          label: "Python",
+          progress: 40,
         },
       ],
     },
     {
-      skillType: "Databases",
-      skillTypeIcon: require("../images/database.png"),
+      type: "Databases",
+      icon: require("../images/database.png"),
       skillsList: [
         {
-          skillLabel: "SQL",
-          skillProgress: 70,
+          label: "SQL",
+          progress: 70,
         },
         {
-          skillLabel: "Postgresql/ PGSQL",
-          skillProgress: 60,
+          label: "Postgresql/ PGSQL",
+          progress: 60,
         },
         {
-          skillLabel: "MySQL ",
-          skillProgress: 55,
+          label: "MySQL ",
+          progress: 55,
         },
         {
-          skillLabel: "Mongodb",
-          skillProgress: 50,
+          label: "Mongodb",
+          progress: 50,
         },
         {
-          skillLabel: "Azure Cosmo-DB",
-          skillProgress: 50,
+          label: "Azure Cosmo-DB",
+          progress: 50,
         },
         {
-          skillLabel: "Elasticsearch",
-          skillProgress: 40,
+          label: "Elasticsearch",
+          progress: 40,
         },
       ],
     },
     {
-      skillType: "Dev tools",
-      skillTypeIcon: require("../images/visual-studio.png"),
+      type: "Dev tools",
+      icon: require("../images/visual-studio.png"),
       skillsList: [
         {
-          skillLabel: "VSCode",
-          skillProgress: 70,
+          label: "VSCode",
+          progress: 70,
         },
         {
-          skillLabel: "Git",
-          skillProgress: 70,
+          label: "Git",
+          progress: 70,
         },
         {
-          skillLabel: "Webpack",
-          skillProgress: 60,
+          label: "Webpack",
+          progress: 60,
         },
         {
-          skillLabel: "Maven",
-          skillProgress: 50,
+          label: "Maven",
+          progress: 50,
         },
         {
-          skillLabel: "BitBuckets",
-          skillProgress: 50,
+          label: "BitBuckets",
+          progress: 50,
         },
         {
-          skillLabel: "Gitlab",
-          skillProgress: 50,
+          label: "Gitlab",
+          progress: 50,
         },
       ],
     },
     {
-      skillType: "DevOps",
-      skillTypeIcon: require("../images/devops.png"),
+      type: "DevOps",
+      icon: require("../images/devops.png"),
       skillsList: [
         {
-          skillLabel: "Docker",
-          skillProgress: 70,
+          label: "Docker",
+          progress: 70,
         },
         {
-          skillLabel: "Linux / Shell",
-          skillProgress: 70,
+          label: "Linux / Shell",
+          progress: 70,
         },
         {
-          skillLabel: "Jenkins",
-          skillProgress: 50,
+          label: "Jenkins",
+          progress: 50,
         },
         {
-          skillLabel: "Kubernate",
-          skillProgress: 40,
+          label: "Kubernate",
+          progress: 40,
         },
         {
-          skillLabel: "Terraform",
-          skillProgress: 40,
+          label: "Terraform",
+          progress: 40,
         },
         {
-          skillLabel: "Heroku PaaS",
-          skillProgress: 40,
+          label: "Heroku PaaS",
+          progress: 40,
         },
         {
-          skillLabel: "AWS",
-          skillProgress: 30,
+          label: "AWS",
+          progress: 30,
         },
       ],
       dislayPage : 2
     },
     {
-      skillType: "Mobile",
-      skillTypeIcon: require("../images/android-logo.png"),
+      type: "Mobile",
+      icon: require("../images/android-logo.png"),
       skillsList: [
         {
-          skillLabel: "React Native",
-          skillProgress: 60,
+          label: "React Native",
+          progress: 60,
         },
         {
-          skillLabel: "Android",
-          skillProgress: 50,
+          label: "Android",
+          progress: 50,
         },
         {
-          skillLabel: "IOS",
-          skillProgress: 40,
+          label: "IOS",
+          progress: 40,
         },
       ],
     },
     ,
     {
-      skillType: "Compétence divers",
-      skillTypeIcon: require("../images/more.png"),
+      type: "Autres compétences",
+      icon: require("../images/more.png"),
       skillsList: [
         {
-          skillLabel: "Scrum",
-          skillProgress: 70,
+          label: "Scrum Agile",
+          progress: 70,
         },
         {
-          skillLabel: "REST API",
-          skillProgress: 70,
+          label: "SaFe Agile",
+          progress: 50,
         },
         {
-          skillLabel: "Test unitaire",
-          skillProgress: 70,
+          label: "REST API",
+          progress: 70,
         },
         {
-          skillLabel: "Test d'integration",
-          skillProgress: 70,
+          label: "Test unitaire",
+          progress: 70,
         },
         {
-          skillLabel: "GraphQL",
-          skillProgress: 40,
+          label: "Test E2E Robot Framwork",
+          progress: 60,
         },
         {
-          skillLabel: "Salceforce Apex / Ligthning",
-          skillProgress: 40,
+          label: "Test E2E Gherkin",
+          progress: 50,
         },
         {
-          skillLabel: "PHP",
-          skillProgress: 50,
+          label: "GraphQL",
+          progress: 40,
         },
         {
-          skillLabel: "C/C++",
-          skillProgress: 50,
+          label: "Salceforce Apex / Ligthning",
+          progress: 40,
+        },
+        {
+          label: "MQL5",
+          progress: 50,
+        },
+        {
+          label: "PHP",
+          progress: 50,
+        },
+        {
+          label: "C/C++",
+          progress: 50,
         },
       ],
       dislayPage : 2
     },
     {
-      skillType: "Anglais",
-      skillTypeIcon: require("../images/english-language.png"),
+      type: "Anglais",
+      icon: require("../images/english-language.png"),
       skillsList: [
         {
-          skillLabel: "Orale",
-          skillProgress: 70,
+          label: "Orale",
+          progress: 70,
         },
         {
-          skillLabel: "Ecrit",
-          skillProgress: 50,
+          label: "Ecrit",
+          progress: 50,
         },
       ],
       dislayPage : 2
@@ -215,8 +228,8 @@ export default {
       style : {
         marginTop : "10px"
       },
-      experienceLabel: "Europ Assistance",
-      experiencetag: "Jui 2022 - aujourd'hui",
+      label: "Europ Assistance",
+      tag: "Jui 2022 - aujourd'hui",
       projects : [{
         projectName: " E-Claims.",
         client: " Europ Assistance.",
@@ -241,8 +254,8 @@ export default {
       style : {
         marginTop : "10px"
       },
-      experienceLabel: "ITNovem (SNCF)",
-      experiencetag: "Jan 2021 - Fév 2022",
+      label: "ITNovem (SNCF)",
+      tag: "Jan 2021 - Fév 2022",
       projects : [{
         projectName: " e-IOT.",
         client: " ITNovem (SNCF).",
@@ -265,8 +278,8 @@ export default {
       style : {
         marginTop : "10px"
       },
-      experienceLabel: "Société Générale",
-      experiencetag: "Déc 2019 - Déc 2020",
+      label: "Société Générale",
+      tag: "Déc 2019 - Déc 2020",
       projects : [{
         projectName: " My Digital Workplace.",
         client: " Société Général.",
@@ -288,8 +301,8 @@ export default {
       style : {
         marginTop : "10px"
       },
-      experienceLabel: "EDIFIXIO (CDI)",
-      experiencetag: "Mars 2016 - Oct 2019",
+      label: "EDIFIXIO (CDI)",
+      tag: "Mars 2016 - Oct 2019",
       projects : [
         {
           projectName: " Référentiel produit Carrefour.",
@@ -338,10 +351,7 @@ export default {
         {
           projectName: " Plateforme de dépannage en ligne.",
           client: " Inter Mutuelle Assistance (IMA). Mai 2017 - Juil 2018",
-          tecs: `Node.js, TypeScript, Angular,
-          Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku,
-          PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de
-          paiment Sogenactif.`,
+          tecs: `Node.js, TypeScript, Angular, Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku, PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de, paiment Sogenactif.`,
           projectContext:
             `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à
             Niort, on a réalisé une application de dépannage d’urgence en
@@ -376,8 +386,8 @@ export default {
     }
     ,
     {
-      experienceLabel: "EDIFIXIO - Stage fin d'études",
-      experiencetag: "Mai 2015 - Nov 2016",
+      label: "EDIFIXIO - Stage fin d'études",
+      tag: "Mai 2015 - Nov 2016",
       projects : [{
         projectName : " Couche de services Elasticsearch.",
         tecs: "Java EE, Spring (Core, MVC,AOP), Elasticsearch.",
@@ -392,4 +402,16 @@ export default {
       dislayPage : 3
     }
   ],
+  fomations : [
+    {
+      label : "Université de Versaille (UVSQ)",
+      tag : "2013 - 2015",
+      description : "  Master en Analyse et conception de Systeme d'information Sûrs."    
+    },
+    {
+      label : "Université de Versaille (UVSQ)",
+      tag : "2013 - 2015",
+      description : "  Master en Analyse et conception de Systeme d'information Sûrs."    
+    }
+  ]
 };

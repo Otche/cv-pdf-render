@@ -42,7 +42,7 @@ export const BodyContent = (props) => {
           }}
         >
           {experiences.map((expr) => {
-            return <ExperienceSection {... expr}/> 
+            return <ExperienceSection {...expr} />;
           })}
         </View>
       </View>
@@ -67,41 +67,27 @@ export const BodyContent = (props) => {
               width: "95%",
             }}
           >
-            <View  style={{
-              marginTop: "20px",
-            }}>
-              <ExperienceHeader
-                label={"Université de Versaille (UVSQ)"}
-                tag={"2013 - 2015"}
-              />
-              <Text
-                style={{
-                  fontSize: "10px",
-                  color: "#58585A",
-                  fontFamily: "Times-Bold",
-                }}
-              >
-                Master en Analyse et conception de Systeme d'information Sûrs.
-              </Text>
-            </View>
-            <View  style={{
-              marginTop: "20px",
-            }}>
-            
-              <ExperienceHeader
-                label={"Université de Bejaia"}
-                tag={"2010 - 2013"}
-              />
-              <Text
-                style={{
-                  fontSize: "10px",
-                  color: "#58585A",
-                  fontFamily: "Times-Bold",
-                }}
-              >
-                Licence en informatique.
-              </Text>
-            </View>
+            {data.fomations.map((formation) => {
+              const { tag, label, description } = formation;
+              return (
+                <View
+                  style={{
+                    marginTop: "20px",
+                  }}
+                >
+                  <ExperienceHeader label={label} tag={tag} />
+                  <Text
+                    style={{
+                      fontSize: "10px",
+                      color: "#58585A",
+                      fontFamily: "Times-Bold",
+                    }}
+                  >
+                    {description}
+                  </Text>
+                </View>
+              );
+            })}
           </View>
         </View>
       )}

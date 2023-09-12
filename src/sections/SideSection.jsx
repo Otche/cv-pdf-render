@@ -39,8 +39,8 @@ export const SideSection = (props) => {
       </View>} 
       {skills.map((skl) => (
         <SkillsTypeContent
-          skillTypeLabel={skl.skillType}
-          skillTypeIcon={skl.skillTypeIcon}
+          label={skl.type}
+          icon={skl.icon}
           skills={skl.skillsList}
         />
       ))}

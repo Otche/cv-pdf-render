@@ -4,19 +4,19 @@ import { SkillsHeader } from "./SkillsHeader";
 import { SkillWithProgress } from "./SkillWithProgress";
 
 export const SkillsTypeContent = ({
-  skillTypeLabel,
-  skillTypeIcon,
+  label,
+  icon,
   skills,
 }) => {
 
   return (
     <View style={{ marginTop: "20px", marginLeft: "5%", marginRight: "5%" }}>
-      <SkillsHeader icon={skillTypeIcon} label={skillTypeLabel} />
+      <SkillsHeader icon={icon} label={label} />
       <View style={{ marginTop: "3px" }}>
         {skills.map((skl) => (
           <SkillWithProgress
-            skillLabel={skl.skillLabel}
-            skillProgress={skl.skillProgress}
+            label={skl.label}
+            progress={skl.progress}
           />
         ))}
       </View>

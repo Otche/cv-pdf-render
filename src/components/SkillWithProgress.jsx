@@ -2,13 +2,13 @@ import React from "react";
 import { Text, View } from "@react-pdf/renderer";
 import { ProgressBar } from "./ProgressBar";
 
-export const SkillWithProgress = ({ skillLabel, skillProgress }) => {
+export const SkillWithProgress = ({ label, progress }) => {
   return (
     <View style={{marginTop :"8px"}}>
       <Text style={{color :"white", fontSize: "10px"}}>
-        {skillLabel}
+        {label}
       </Text>
-      <ProgressBar percentProgress={skillProgress}/>
+      <ProgressBar percentProgress={progress}/>
     </View>
   );
 };

@@ -4,16 +4,16 @@ import { ExperienceHeader } from "../components/ExperienceHeader";
 import { ExperienceBody } from "../components/ExperienceBody";
 
 export const ExperienceSection = ({
-    experienceLabel, 
-    experiencetag,
+    label, 
+    tag,
     projects,
     style = {}
 }) => {
     const componentStyle = {  marginTop : (!style.marginTop) ? "5px" : style.marginTop , ...style};
     return <View style={componentStyle}>
       <ExperienceHeader
-        label={experienceLabel}
-        tag={experiencetag} 
+        label={label}
+        tag={tag} 
       />
       {
         projects.map(
