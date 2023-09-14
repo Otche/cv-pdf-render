@@ -5,7 +5,7 @@ export default {
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
   overview:
-    `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans diffrents projets de conseils et de développements, avec des contexts technologiques et organisationnels divers, notament les ecosystemes Node.js et React.js et Agile. 
+    `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, je suis intervenu dans différents projets de conseils et de développements, avec des contextes technologiques et organisationnels divers, notamment les écosystèmes Node.js et React.js et Agile.
     Aujourd’hui, je suis à la recherche de nouvelles opportunité.`,
   skills: [
     {
@@ -14,7 +14,7 @@ export default {
       skillsList: [
         {
           label: "JavaScript / Typescript ",
-          progress: 85,
+          progress: 90,
         },
         {
           label: "Java",
@@ -101,11 +101,11 @@ export default {
         },
         {
           label: "Android",
-          progress: 50,
+          progress: 40,
         },
         {
           label: "IOS",
-          progress: 40,
+          progress: 30,
         },
       ],
     },
@@ -298,11 +298,11 @@ export default {
           Le projet a une partie back-office (E-conf) ou on peux configurer les différentes fonctionnalités du front-office.
           Le framwork de la gestion du projet est un scrum très alléger (daily / poker planing)`,
         projectMissions: [
-          "- Développement et maintenance des fonctionnalités front en React.js .",
+          "- Développement et maintenance des fonctionnalités front en React.js.",
           "- Refonte du front React.js .",
-          "- Développement et maintenance des fonctionnalités backend Java .",
-          "- Développement et maintenance des fonctionnalités back-office admin-on-rest / Loopback 3 .",
-          "- Migration de Loopback 3 à Loopback 4 ."
+          "- Développement et maintenance des fonctionnalités backend Java.",
+          "- Développement et maintenance des fonctionnalités back-office admin-on-rest / Loopback 3.",
+          "- Migration de Loopback 3 à Loopback 4."
        ],
       }],
      
@@ -326,7 +326,7 @@ export default {
           "- Développement des décodeurs.",
           "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoT's.",
           "- Écriture des tests d'intégrations end-to-end en utilisant.Robot-Framwork",
-          "-  Tirage de versions des différents composants applicatifs."
+          "- Tirage de versions des différents composants applicatifs."
         ],
       }],
     
