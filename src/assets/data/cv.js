@@ -9,17 +9,35 @@ export default {
     Aujourd’hui, je suis à la recherche de nouvelles opportunité.`,
   skills: [
     {
-      type: "Développement",
-      icon: require("../images/software.png"),
+      type: "Langage de programation",
+      icon: require("../images/code.png"),
       skillsList: [
         {
           label: "JavaScript / Typescript ",
           progress: 85,
         },
         {
-          label: "React.js ",
-          progress: 80,
+          label: "Java",
+          progress: 60,
         },
+        {
+          label: "Python",
+          progress: 50,
+        },
+        {
+          label: "PHP",
+          progress: 40,
+        },
+        {
+          label: "C / C++",
+          progress: 40,
+        }
+      ],
+    },
+    {
+      type: "Ecosystémes Back",
+      icon: require("../images/back.png"),
+      skillsList: [
         {
           label: "Node.js",
           progress: 75,
@@ -33,25 +51,75 @@ export default {
           progress: 70,
         },
         {
-          label: "Java",
+          label: "REST API",
+          progress: 70,
+        },
+        {
+          label: "GraphQL",
+          progress: 50,
+        },
+        {
+          label: "Loopback 3 / 4",
+          progress: 40,
+        },
+        {
+          label: "Spring Java",
+          progress: 40,
+        },
+      ]
+    },
+    {
+      type: "Ecosystémes Font",
+      icon: require("../images/front.png"),
+      skillsList: [
+        {
+          label: "React.js ",
+          progress: 80,
+        },
+        {
+          label: "Angular",
+          progress: 40,
+        },
+        {
+          label: "Angular.js",
+          progress: 30,
+        },
+        {
+          label: "Material UI",
+          progress: 40,
+        },        
+      ]
+    },
+    {
+      type: "Mobile",
+      icon: require("../images/android-logo.png"),
+      dislayPage : 2,
+      skillsList: [
+        {
+          label: "React Native",
           progress: 60,
         },
         {
-          label: "Python",
+          label: "Android",
+          progress: 50,
+        },
+        {
+          label: "IOS",
           progress: 40,
         },
       ],
     },
     {
-      type: "Databases",
+      type: "Base de données",
       icon: require("../images/database.png"),
+    
       skillsList: [
         {
           label: "SQL",
           progress: 70,
         },
         {
-          label: "Postgresql/ PGSQL",
+          label: "Postgresql / PGSQL",
           progress: 60,
         },
         {
@@ -59,7 +127,7 @@ export default {
           progress: 55,
         },
         {
-          label: "Mongodb",
+          label: "MongoDB",
           progress: 50,
         },
         {
@@ -73,8 +141,28 @@ export default {
       ],
     },
     {
+      type: "Tests",
+      icon: require("../images/testing.png"),
+      skillsList: [
+        {
+          label: "Jest / Mocha / Chai.js",
+          progress: 70,
+        },
+        {
+          label: "Robot Framwork",
+          progress: 50,
+        },
+        {
+          label: "Gherkin cucumber",
+          progress: 40,
+        },
+      ],
+      dislayPage : 2
+    },
+    {
       type: "Dev tools",
       icon: require("../images/visual-studio.png"),
+      dislayPage : 2,
       skillsList: [
         {
           label: "VSCode",
@@ -137,25 +225,7 @@ export default {
       ],
       dislayPage : 2
     },
-    {
-      type: "Mobile",
-      icon: require("../images/android-logo.png"),
-      skillsList: [
-        {
-          label: "React Native",
-          progress: 60,
-        },
-        {
-          label: "Android",
-          progress: 50,
-        },
-        {
-          label: "IOS",
-          progress: 40,
-        },
-      ],
-    },
-    ,
+    
     {
       type: "Autres compétences",
       icon: require("../images/more.png"),
@@ -169,24 +239,16 @@ export default {
           progress: 50,
         },
         {
-          label: "REST API",
-          progress: 70,
-        },
-        {
-          label: "Test unitaire",
-          progress: 70,
-        },
-        {
-          label: "Test E2E Robot Framwork",
-          progress: 60,
-        },
-        {
-          label: "Test E2E Gherkin",
+          label: "Micro services",
           progress: 50,
         },
         {
-          label: "GraphQL",
-          progress: 40,
+          label: "Kafka",
+          progress: 50,
+        },
+        {
+          label: "Talend ETL",
+          progress: 50,
         },
         {
           label: "Salceforce Apex / Ligthning",
@@ -194,33 +256,28 @@ export default {
         },
         {
           label: "MQL5",
-          progress: 50,
+          progress: 40,
         },
-        {
-          label: "PHP",
-          progress: 50,
-        },
-        {
-          label: "C/C++",
-          progress: 50,
-        },
+       
       ],
       dislayPage : 2
     },
+   
     {
       type: "Anglais",
       icon: require("../images/english-language.png"),
+      dislayPage : 3,
       skillsList: [
         {
           label: "Orale",
-          progress: 70,
+          progress: 50,
         },
         {
           label: "Ecrit",
-          progress: 50,
+          progress: 70,
         },
       ],
-      dislayPage : 2
+      
     },
   ],
   experiences: [
