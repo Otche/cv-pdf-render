@@ -1,6 +1,6 @@
 export default {
   name: "Amine OUCHIHA",
-  age: 30,
+  age: 31,
   email: "ouchihaamine@gmail.com",
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
@@ -18,7 +18,7 @@ export default {
           progress: 80,
         },
         {
-          label: "Java",
+          label: "Java 8",
           progress: 60,
         },
         {
@@ -45,7 +45,7 @@ export default {
         },
         {
           label: "Next.js ",
-          progress: 30,
+          progress: 20,
         },
         {
           label: "Angular",
@@ -140,10 +140,6 @@ export default {
           label: "Azure Cosmo-DB",
           progress: 50,
         },
-        {
-          label: "Elasticsearch",
-          progress: 40,
-        },
       ],
     },
     {
@@ -151,11 +147,11 @@ export default {
       icon: require("../images/testing.png"),
       skillsList: [
         {
-          label: "Jest / Mocha / Chai.js",
+          label: "Jest",
           progress: 60,
         },
         {
-          label: "Robot Framwork",
+          label: "Robot Framework",
           progress: 50,
         },
         {
@@ -213,7 +209,7 @@ export default {
           progress: 40,
         },
         {
-          label: "Kubernate",
+          label: "Kubernates",
           progress: 40,
         },
         {
@@ -247,6 +243,10 @@ export default {
         {
           label: "Micro services",
           progress: 50,
+        },
+        {
+          label: "Elasticsearch",
+          progress: 40,
         },
         {
           label: "Kafka",
@@ -298,11 +298,10 @@ export default {
           tecs: " React.js, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3, loopback4.",
           projectContext: `Pour le compte d'Europ Assistance, je suis intervenu en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de cinq développeurs, un PO et un Manager.
           La plateforme gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
-          Le projet a une partie back-office (E-conf), où on peut configurer les différentes fonctionnalités du front-office.
-          Le framwork de la gestion du projet est un scrum allégé (daily / poker planing).`,
+          Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé (daily / poker planning)..`,
           projectMissions: [
             "- Développement et maintenance des fonctionnalités front en React.js.",
-            "- Refonte du front React.js .",
+            "- Refonte du front React.js.",
             "- Développement et maintenance des fonctionnalités backend Java.",
             "- Développement et maintenance des fonctionnalités back-office admin-on-rest / Loopback 3.",
             "- Migration de Loopback 3 à Loopback 4 du backend back-office.",
@@ -321,12 +320,12 @@ export default {
           projectName: " e-IOT.",
           client: " ITNovem (SNCF).",
           tecs: " Nest.js, Node.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT.",
-          projectContext: `Pour le compte d'ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo. 
-          La platfome pérmet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
+          projectContext: `Pour le compte de ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.
+          La plateforme permet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
           projectMissions: [
             "- Développement des décodeurs.",
-            "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoT's.",
-            "- Écriture des tests d'intégrations end-to-end en utilisant le framwork Robot-Framwork",
+            "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoTs.",
+            "- Écriture des tests d'intégrations end-to-end en utilisant le framework Robot-Framework.",
             "- Tirage de versions des différents composants applicatifs.",
           ],
         },
@@ -345,9 +344,9 @@ export default {
           tecs: " TypeScript, Node.js, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
           projectContext: `Pour le compte de la Société Générale, et dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.`,
           projectMissions: [
-            "- Participation aux différentes cérémonies SAFE.",
+            "- Participation aux différentes cérémonies SAFe.",
             "- Développement des fonctionnalités back en Nest.js et front en React.js.",
-            "- Tirage de release et participation à la mise en production.",
+            "- Tirage de versions et participation à la mise en production.",
           ],
         },
       ],
@@ -365,7 +364,7 @@ export default {
           tecs: " IBM MDM Infosphere, Java 8, Linux.",
           projectContext: `Pour le compte de Carrefour, et dans le cadre d’un projet référentiel de données utilisant la solution IBM MDM, je suis intervenu dans une équipe de six personnes en tant que consultant développeur Java sur la solution.`,
           projectMissions: [
-            "- Mise en place de scripts TrigoScript pour import/ export de données.",
+            "- Mise en place de scripts Trigo Script pour import/ export de données.",
             "- Étude et Réécriture de routines d'import / export Java, dans le but d'optimiser les performances.",
             "- Réalisation d'une documentation sur l'architecture applicative.",
           ],
@@ -384,36 +383,38 @@ export default {
           projectName: " Application React Native - Salesforce (CXO).",
           client: " Salesforce. Aout-Oct 2018",
           tecs: " React Native, Salesforce, Apex, Push notification, Jest.",
-          projectContext: `Pour le compte d'un projet pilote en partenariat avec Salesforce, j'ai participé à la réalisation et à la maintenance de fonctionnalités d'un réseau sociale d'entreprise au sein d'une équipe de quatre personnes.`,
+          projectContext: `Dans un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux.
+          J'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
           projectMissions: [
-            "- Migration des services React native coté Back (APEX) pour réduire le nombre d'appels intermédiaires serveur.",
-            "- Test Unitaire de services (Code Covrage Salesforce) et des composants React Native avec Jest et Enzyme..",
-            "- Mise en place de Push notifications et création des trigguers APEX pour les générer.",
+            "- Migration des services React native côté Back (APEX) pour réduire le nombre d'appels intermédiaires serveur.",
+            "- Test Unitaire de services (Code Coverage Salesforce) et des composants React Native avec Jest et Enzyme.",
+            "- Mise en place de Push notifications et création des triggers APEX pour les générer.",
           ],
         },
         {
           projectName: " Plateforme de dépannage en ligne.",
           client: " Inter Mutuelle Assistance (IMA). Mai 2017 - Juil 2018",
           tecs: ` Node.js, TypeScript, Angular, Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku, PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de, paiment Sogenactif.`,
-          projectContext: `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à Niort, on a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation. 
+          projectContext: `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à Niort, on a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation.
           Sur ce projet, j’ai mené une mission de développeur puis de tech-lead.`,
           projectMissions: [
             "- Conception des services web.",
             "- Conception et implémentation des clients web.",
-            "- Administration des environnements sur Heroku PaaS.",
-            "- Mise en place de la CI avec Heroku flow et de la CD avec remotes views.",
+            "- Administration des environnements sur Heroku PaaS. ",
+            "- Mise en place de la CI avec Heroku flow et de la CD avec remote views.",
           ],
         },
         {
           projectName: " Plateforme web et collaborative Jalios CMS.",
           client: " COFREND. Mars 2016 - Jan 2017",
           tecs: ` Jalios, Java JEE,  JavaScript, JQuery.`,
-          projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), et au sein d'une équipe de trois personnes, j'ai participé à la réalisation d'une application web collaborative.`,
+          projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), et au sein d'une
+          équipe de trois personnes, j'ai participé à la réalisation d'une application web collaborative.`,
           projectMissions: [
             "- Création de types de contenus et gestion de leurs affichages.",
             "- Création de types de formulaires et gestion des règles métiers.",
-            "- Création des pages portails et gestion de la navigation dans le site.",
-            "- Interfaçage avec un service de paiement en ligne (avec la solution Monitico).",
+            "- Création des pages portails et gestion de la navigation sur le site.",
+            "- Interfaçage avec un service de paiement en ligne (avec la solution Monetico).",
           ],
         },
       ],
@@ -427,7 +428,7 @@ export default {
           projectName: " Couche de services Elasticsearch.",
           tecs: " Java EE, Spring (Core, MVC,AOP), Elasticsearch.",
           projectContext:
-            "Pour mon stage de fin d'études, j'ai eu à réaliser une API configurable en Java pour interroger un index Elasticsearch et générer des facettes dynamiques de recherche.",
+            " Pour mon stage de fin d'études, j'ai eu à réaliser une API configurable en Java pour interroger un index Elasticsearch et générer des facettes dynamiques de recherche.",
           projectMissions: [
             "- Étude de l’état de l’art sur les moteurs de recherches.",
             "- Conception et réalisation d'une API configurable utilisant des facettes sur Elasticsearch en Java.",
