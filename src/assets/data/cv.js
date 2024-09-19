@@ -10,7 +10,7 @@ export default {
   Aujourd’hui, je suis à la recherche de nouvelles opportunités.`,
   skills: [
     {
-      type: "Langage de programation",
+      type: "Langages de programation",
       icon: require("../images/code.png"),
       skillsList: [
         {
@@ -36,23 +36,31 @@ export default {
       ],
     },
     {
-      type: "Ecosystémes Font",
+      type: "Interface Web",
       icon: require("../images/front.png"),
       skillsList: [
+        {
+          label : "HTML5 / CSS3",
+          progress: 80,
+        },
+        {
+          label: "Accessibilité / SEO",
+          progress: 60,
+        },
         {
           label: "React.js ",
           progress: 80,
         },
         {
           label: "Next.js ",
-          progress: 20,
-        },
-        {
-          label: "Angular",
           progress: 40,
         },
         {
-          label: "Angular.js",
+          label: "Tailwind CSS",
+          progress : 50
+        },
+        {
+          label: "Angular",
           progress: 30,
         },
         {
@@ -62,7 +70,7 @@ export default {
       ],
     },
     {
-      type: "Ecosystémes Back",
+      type: "Développement Back-end",
       icon: require("../images/back.png"),
       skillsList: [
         {
@@ -78,16 +86,16 @@ export default {
           progress: 70,
         },
         {
-          label: "REST API",
+          label: "RESTful API",
           progress: 70,
         },
         {
           label: "GraphQL",
-          progress: 50,
+          progress: 40,
         },
         {
           label: "Loopback 3 / 4",
-          progress: 40,
+          progress: 30,
         },
         {
           label: "Spring Java",
@@ -126,7 +134,7 @@ export default {
         },
         {
           label: "Postgresql / PGSQL",
-          progress: 50,
+          progress: 60,
         },
         {
           label: "MySQL",
@@ -162,7 +170,7 @@ export default {
       dislayPage: 2,
     },
     {
-      type: "Dev tools",
+      type: "Outils de développements",
       icon: require("../images/visual-studio.png"),
       dislayPage: 2,
       skillsList: [
@@ -175,6 +183,10 @@ export default {
           progress: 70,
         },
         {
+          label: "Copilot / Cursor AI",
+          progress: 40,
+        },
+        {
           label: "Webpack",
           progress: 50,
         },
@@ -183,13 +195,9 @@ export default {
           progress: 40,
         },
         {
-          label: "BitBuckets",
+          label: "BitBuckets / Gitlab / Github",
           progress: 40,
-        },
-        {
-          label: "Gitlab",
-          progress: 40,
-        },
+        }
       ],
     },
     {
@@ -287,7 +295,7 @@ export default {
   experiences: [
     {
       style: {
-        marginTop: "10px",
+        marginTop: "0px",
       },
       label: "Europ Assistance",
       tag: "Jui 2022 - Déc 2023",
@@ -295,23 +303,25 @@ export default {
         {
           projectName: " E-Claims.",
           client: " Europ Assistance.",
-          tecs: " React.js, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback3, loopback4.",
-          projectContext: `Pour le compte d'Europ Assistance, je suis intervenu en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de cinq développeurs, un PO et un Manager.
-          La plateforme gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
-          Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé (daily / poker planning)..`,
+          tecs: " React.js, Webpack, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback 3 et 4.",
+          projectContext: `Pour le compte d'Europ-Assistance, je suis intervenu en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de cinq développeurs, un PO et un Manager. La plateforme gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
+            Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé ( Daily / Poker planning ).`,
           projectMissions: [
             "- Développement et maintenance des fonctionnalités front en React.js.",
-            "- Refonte du front React.js.",
-            "- Développement et maintenance des fonctionnalités backend Java.",
-            "- Développement et maintenance des fonctionnalités back-office admin-on-rest / Loopback 3.",
-            "- Migration de Loopback 3 à Loopback 4 du backend back-office.",
+            "- Refonte de l'UI en React.js en se basant sur du Material-UI.",
+            "- Gestion et optimisation du bundling avec Webpack.",
+            "- Développement et maintenance des API backend (Java 8/ Spring).",
+            "- Maintenance du back-office en Admin-on-rest et Loopback 3.",
+            "- Migration de Loopback 3 à Loopback 4 du backend du back-office.",
+            "- Tirage et gestion de versions (Git / Bitbucket)",
+            "- Déploiments et testes avec du Jenkins sur des fonctions AWS Lambda."
           ],
         },
       ],
     },
     {
       style: {
-        marginTop: "10px",
+        marginTop: "0px",
       },
       label: "ITNovem (SNCF)",
       tag: "Jan 2021 - Fév 2022",
@@ -319,21 +329,24 @@ export default {
         {
           projectName: " e-IOT.",
           client: " ITNovem (SNCF).",
-          tecs: " Nest.js, Node.js, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT.",
-          projectContext: `Pour le compte de ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode combo.
+          tecs: " Nest.js, Node.js, TypeORM, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT, CosmoDB.",
+          projectContext: `Pour le compte de ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode de géstion de projet Combo.
           La plateforme permet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
           projectMissions: [
-            "- Développement des décodeurs.",
-            "- Développement des fonctionnalités de configuration, gestion et remontée de données des IoTs.",
-            "- Écriture des tests d'intégrations end-to-end en utilisant le framework Robot-Framework.",
-            "- Tirage de versions des différents composants applicatifs.",
+            "- Développement de décodeurs de trame des IoT's sous forme de libreries en Typescript.",
+            "- Développement de fonctionnalités de configuration sous forme de modules Nest.js.",
+            "- Expositions des fonctionnalités via des CRUD RESTful sur Nest.js.",
+            "- Traitement des remontées de données en temps-reél des IoTs.",
+            "- Écriture de tests d'intégrations en utilisant le framework Robot-Framework.",
+            "- Tirage de versions des différents composants applicatifs (Git / Gitlab).",
+            "- Déploiment des composants sur les envirenements de pre-prod en utilisant Jenkins."
           ],
         },
       ],
     },
     {
       style: {
-        marginTop: "10px",
+        marginTop: "0px",
       },
       label: "Société Générale",
       tag: "Déc 2019 - Déc 2020",
@@ -341,19 +354,24 @@ export default {
         {
           projectName: " My Digital Workplace.",
           client: " Société Général.",
-          tecs: " TypeScript, Node.js, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
-          projectContext: `Pour le compte de la Société Générale, et dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.`,
+          tecs: " TypeScript, Node.js, Nest.js, TypeORM, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
+          projectContext: `Pour le compte de la Société Générale, et dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.
+          Le projet avait comme objectif de créer une platforme qui agréger tous les services dédié aux collaborator, comme l'allocation de PC, de badges ou de machine virtuelle, la documentation et la création de liste de diffusions de mails`,
           projectMissions: [
-            "- Participation aux différentes cérémonies SAFe.",
-            "- Développement des fonctionnalités back en Nest.js et front en React.js.",
-            "- Tirage de versions et participation à la mise en production.",
+            "- Participation aux différentes cérémonies SAFe comme le Program Increment au sein du train.",
+            "- Participation aux Cérimonies Agile au sein de l'equipe.",
+            "- Développement des Api's back Node.js Avec Le framwork Nest.js et L'ORM TypeORM.", 
+            "- Développement du Front en React.js en TypeScript.",
+            "- Utilisation des contianer Dockers et Docker-compose dans le cadre du dévloppement.",
+            "- Tirage de versions et participation à la mise en production (Git / Gitlab).",
+            "- Utilisation d'Openshift pour la gestion des Pod's. "
           ],
         },
       ],
     },
     {
       style: {
-        marginTop: "10px",
+        marginTop: "0px",
       },
       label: "EDIFIXIO",
       tag: "Mars 2016 - Oct 2019",
@@ -362,7 +380,8 @@ export default {
           projectName: " Référentiel produit Carrefour.",
           client: " Carrefour. Fév-Sept 2019",
           tecs: " IBM MDM Infosphere, Java 8, Linux.",
-          projectContext: `Pour le compte de Carrefour, et dans le cadre d’un projet référentiel de données utilisant la solution IBM MDM, je suis intervenu dans une équipe de six personnes en tant que consultant développeur Java sur la solution.`,
+          projectContext: `Pour le compte de Carrefour, et dans le cadre d’un projet référentiel de données utilisant la solution IBM MDM, 
+          je suis intervenu dans une équipe de six personnes en tant que consultant développeur Java sur la solution.`,
           projectMissions: [
             "- Mise en place de scripts Trigo Script pour import/ export de données.",
             "- Étude et Réécriture de routines d'import / export Java, dans le but d'optimiser les performances.",
@@ -373,7 +392,8 @@ export default {
           projectName: " POC Intentionality.",
           client: " Interne Edifixio. Oct 2018 - Jan 2019",
           tecs: " React.js, Redux, IBM Bluemix,Composants Bootstrap.",
-          projectContext: `Dans un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux, j'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
+          projectContext: `Dans un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux, 
+          j'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
           projectMissions: [
             "- Conception, découpage et réalisation des composants React.js .",
             "- Appel des services distant et intégration des services sur le front.",
@@ -393,18 +413,24 @@ export default {
         },
         {
           projectName: " Plateforme de dépannage en ligne.",
-          client: " Inter Mutuelle Assistance (IMA). Mai 2017 - Juil 2018",
+          client: " Inter Mutuelle Assistance (IMA). Fev 2017 - Juil 2018",
           tecs: ` Node.js, TypeScript, Angular, Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku, PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de, paiment Sogenactif.`,
-          projectContext: `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à Niort, on a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation.
+          projectContext: `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à Niort, 
+          on a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation.
           Sur ce projet, j’ai mené une mission de développeur puis de tech-lead.`,
           projectMissions: [
-            "- Conception des services web.",
-            "- Conception et implémentation des clients web.",
+            "- Conception des services web RESTful Avec Node.js en Typescript.",
+            "- Interfaçage avec Le CRM Salesforce via Heroku Connect.",
+            "- Gestion des données via l'ORM TypeORM .",
+            "- Implémentation de l'UI en utilisant Angular.js.",
+            "- Gerstion du Bundling Avec Gulp.",
+            "- Migration du front sur Angular.",
             "- Administration des environnements sur Heroku PaaS. ",
             "- Mise en place de la CI avec Heroku flow et de la CD avec remote views.",
           ],
         },
         {
+          dislayPage: 3,
           projectName: " Plateforme web et collaborative Jalios CMS.",
           client: " COFREND. Mars 2016 - Jan 2017",
           tecs: ` Jalios, Java JEE,  JavaScript, JQuery.`,
