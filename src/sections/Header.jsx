@@ -5,7 +5,7 @@ import { getFileData } from "../utils/read-file";
 import locationIcon from "../assets/images/location.png";
 import phoneIcon from "../assets/images/phone.png";
 import emailIcon from "../assets/images/email.png";
-import profileImage from "../assets/images/profil-img.png";
+import profileImage from "../assets/images/amine-photo-802w.jpg";
 import { DataContext } from "./Cv";
 
 

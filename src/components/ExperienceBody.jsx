@@ -11,7 +11,7 @@ export const ExperienceBody = ({
 }) => {
   return (
     <View style={{
-      marginBottom : "20px"
+      marginBottom : "5px"
     }}>
      
       <View

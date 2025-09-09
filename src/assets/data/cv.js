@@ -1,6 +1,6 @@
 export default {
   name: "Amine OUCHIHA",
-  age: 31,
+  age: 33,
   email: "ouchihaamine@gmail.com",
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
@@ -26,10 +26,6 @@ export default {
           progress: 50,
         },
         {
-          label: "PHP",
-          progress: 40,
-        },
-        {
           label: "C / C++",
           progress: 40,
         },
@@ -44,29 +40,21 @@ export default {
           progress: 80,
         },
         {
-          label: "Accessibilité / SEO",
-          progress: 60,
-        },
-        {
-          label: "React.js ",
+          label: "React.js",
           progress: 80,
         },
         {
-          label: "Next.js ",
+          label: "Next.js",
           progress: 40,
         },
-        {
-          label: "Tailwind CSS",
-          progress : 50
+         {
+          label: "Material UI",
+          progress: 70,
         },
         {
           label: "Angular",
           progress: 30,
-        },
-        {
-          label: "Material UI",
-          progress: 40,
-        },
+        }
       ],
     },
     {
@@ -92,15 +80,7 @@ export default {
         {
           label: "GraphQL",
           progress: 40,
-        },
-        {
-          label: "Loopback 3 / 4",
-          progress: 30,
-        },
-        {
-          label: "Spring Java",
-          progress: 40,
-        },
+        }
       ],
     },
 
@@ -126,28 +106,15 @@ export default {
     {
       type: "Base de données",
       icon: require("../images/database.png"),
-
       skillsList: [
         {
-          label: "SQL",
+          label: "SQL / PGSQL",
           progress: 70,
-        },
-        {
-          label: "Postgresql / PGSQL",
-          progress: 60,
-        },
-        {
-          label: "MySQL",
-          progress: 50,
         },
         {
           label: "MongoDB",
           progress: 50,
-        },
-        {
-          label: "Azure Cosmo-DB",
-          progress: 50,
-        },
+        }
       ],
     },
     {
@@ -167,12 +134,10 @@ export default {
           progress: 40,
         },
       ],
-      dislayPage: 2,
     },
     {
       type: "Outils de développements",
       icon: require("../images/visual-studio.png"),
-      dislayPage: 2,
       skillsList: [
         {
           label: "VSCode",
@@ -191,14 +156,11 @@ export default {
           progress: 50,
         },
         {
-          label: "Maven",
-          progress: 40,
-        },
-        {
           label: "BitBuckets / Gitlab / Github",
           progress: 40,
         }
       ],
+      dislayPage: 2,
     },
     {
       type: "DevOps",
@@ -206,10 +168,6 @@ export default {
       skillsList: [
         {
           label: "Docker",
-          progress: 50,
-        },
-        {
-          label: "Linux / Shell",
           progress: 50,
         },
         {
@@ -225,7 +183,7 @@ export default {
           progress: 30,
         },
         {
-          label: "Heroku PaaS",
+          label: "GCP",
           progress: 30,
         },
         {
@@ -249,10 +207,6 @@ export default {
           progress: 50,
         },
         {
-          label: "Micro services",
-          progress: 50,
-        },
-        {
           label: "Elasticsearch",
           progress: 40,
         },
@@ -262,10 +216,6 @@ export default {
         },
         {
           label: "Talend ETL",
-          progress: 40,
-        },
-        {
-          label: "Salceforce Apex / Ligthning",
           progress: 40,
         },
         {
@@ -279,7 +229,7 @@ export default {
     {
       type: "Anglais",
       icon: require("../images/english-language.png"),
-      dislayPage: 3,
+      dislayPage: 2,
       skillsList: [
         {
           label: "Orale",
@@ -293,6 +243,24 @@ export default {
     },
   ],
   experiences: [
+    {
+      label: "TEC-INVEST",
+      tag: "Mai 2024 - Aujourd’hui",
+      projects: [
+        {
+          projectName: "Générateur de CV",
+          client: "Interne",
+          tecs: "Nest.js, Next.js, Material UI, Jest, Puppeteer, Firebase",
+          projectContext: `Application de génération de CV à partir de templates, 
+          avec des options de personnalisation avancées.`,
+          projectMissions: [
+            "- Développement de l’UI avec Next.js.",
+            "- Gestion des utilisateurs et génération des CV avec Nest.js.",
+            "- Création des templates de CV.",
+          ],
+        },
+      ],
+    },
     {
       style: {
         marginTop: "0px",
@@ -359,15 +327,13 @@ export default {
           Le projet avait comme objectif de créer une platforme qui agréger tous les services dédié aux collaborator, comme l'allocation de PC, de badges ou de machine virtuelle, la documentation et la création de liste de diffusions de mails`,
           projectMissions: [
             "- Participation aux différentes cérémonies SAFe comme le Program Increment au sein du train.",
-            "- Participation aux Cérimonies Agile au sein de l'equipe.",
             "- Développement des Api's back Node.js Avec Le framwork Nest.js et L'ORM TypeORM.", 
             "- Développement du Front en React.js en TypeScript.",
-            "- Utilisation des contianer Dockers et Docker-compose dans le cadre du dévloppement.",
             "- Tirage de versions et participation à la mise en production (Git / Gitlab).",
-            "- Utilisation d'Openshift pour la gestion des Pod's. "
           ],
         },
       ],
+      dislayPage: 2,
     },
     {
       style: {
@@ -421,23 +387,18 @@ export default {
           projectMissions: [
             "- Conception des services web RESTful Avec Node.js en Typescript.",
             "- Interfaçage avec Le CRM Salesforce via Heroku Connect.",
-            "- Gestion des données via l'ORM TypeORM .",
-            "- Implémentation de l'UI en utilisant Angular.js.",
-            "- Gerstion du Bundling Avec Gulp.",
-            "- Migration du front sur Angular.",
-            "- Administration des environnements sur Heroku PaaS. ",
+            "- Implémentation de l'UI en utilisant Angular.",
             "- Mise en place de la CI avec Heroku flow et de la CD avec remote views.",
           ],
         },
         {
-          dislayPage: 3,
+
           projectName: " Plateforme web et collaborative Jalios CMS.",
           client: " COFREND. Mars 2016 - Jan 2017",
           tecs: ` Jalios, Java JEE,  JavaScript, JQuery.`,
           projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), et au sein d'une
           équipe de trois personnes, j'ai participé à la réalisation d'une application web collaborative.`,
           projectMissions: [
-            "- Création de types de contenus et gestion de leurs affichages.",
             "- Création de types de formulaires et gestion des règles métiers.",
             "- Création des pages portails et gestion de la navigation sur le site.",
             "- Interfaçage avec un service de paiement en ligne (avec la solution Monetico).",

@@ -56,7 +56,7 @@ export const BodyContent = (props) => {
               borderTopColor: "#12B4E4",
               borderTopStyle: "solid",
               borderTopWidth: "2px",
-              marginTop: "20px",
+              marginTop: "5px",
             }}
           >
             <SectionBadge label={"Formations"} />
