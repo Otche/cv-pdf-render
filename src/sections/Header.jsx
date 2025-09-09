@@ -5,6 +5,7 @@ import { getFileData } from "../utils/read-file";
 import locationIcon from "../assets/images/location.png";
 import phoneIcon from "../assets/images/phone.png";
 import emailIcon from "../assets/images/email.png";
+import webIcon from "../assets/images/web.png";
 import profileImage from "../assets/images/amine-photo-802w.jpg";
 import { DataContext } from "./Cv";
 
@@ -52,12 +53,13 @@ const JobNameRender = (props) => {
 
 const ContactRender = (props) => {
   const data = useContext(DataContext);
-  const { phone, email,adresse}  = data;
+  const { phone, email,adresse, site}  = data;
   return (
     <View {...props}>
       <InfoLine text={adresse} icon={locationIcon} />
       <InfoLine text={phone} icon={phoneIcon} linkType={"tel"} />
       <InfoLine text={email} icon={emailIcon} linkType={"mailto"} />
+      <InfoLine text={site} icon={webIcon} linkType={"url"}  />
     </View>
   );
 };
@@ -121,7 +123,8 @@ const LeftSectionRender = (props) => {
     >
       <IdentiyRender/>
       <ContactRender style = {{
-        marginTop : "10px",
+        marginTop : "5px",
+        marginBottom :"2px", 
         fontSize : "9px"
       }}/>
     </View>

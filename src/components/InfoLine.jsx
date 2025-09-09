@@ -15,16 +15,16 @@ export const InfoLine = (props) => {
           src={getFileData(icon)}
         />
         {(linkType === "mailto" || linkType === "tel") && (
-          <Link style={{ color: "white" }} src={`${linkType}:${{ text }}`}>
+          <Link style={{ color: "white", marginLeft: '5px' }} src={`${linkType}:${{ text }}`}>
             <Text>{text}</Text>
           </Link>
         )}
         {linkType === "url" && (
-          <Link style={{ color: "white" }} src={text}>
+          <Link style={{ color: "white", marginLeft: '5px' }} src={text}>
             <Text>{text}</Text>
           </Link>
         )}
-        {!linkType && <Text>{text}</Text>}
+        {!linkType && <Text style={{ color: "white", marginLeft: '5px' }}>{text}</Text>}
       </Text>
     </View>
 };

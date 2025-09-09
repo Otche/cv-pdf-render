@@ -1,7 +1,8 @@
 export default {
   name: "Amine OUCHIHA",
   age: 33,
-  email: "ouchihaamine@gmail.com",
+  email: "contat@amine-ouchiha.com",
+  site: "https://amine-ouchiha.com",
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
   overview: `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, 
@@ -248,10 +249,9 @@ export default {
       tag: "Mai 2024 - Aujourd’hui",
       projects: [
         {
-          projectName: "Générateur de CV",
-          client: "Interne",
+          projectName: "Générateur de CV ",
           tecs: "Nest.js, Next.js, Material UI, Jest, Puppeteer, Firebase",
-          projectContext: `Application de génération de CV à partir de templates, 
+          projectContext: `J'ai réaliser pour le compte de mon entreprise TEC-INVEST une Application de génération de CV à partir de templates, 
           avec des options de personnalisation avancées.`,
           projectMissions: [
             "- Développement de l’UI avec Next.js.",
@@ -270,7 +270,6 @@ export default {
       projects: [
         {
           projectName: " E-Claims.",
-          client: " Europ Assistance.",
           tecs: " React.js, Webpack, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback 3 et 4.",
           projectContext: `Pour le compte d'Europ-Assistance, je suis intervenu en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de cinq développeurs, un PO et un Manager. La plateforme gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
             Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé ( Daily / Poker planning ).`,
@@ -296,7 +295,6 @@ export default {
       projects: [
         {
           projectName: " e-IOT.",
-          client: " ITNovem (SNCF).",
           tecs: " Nest.js, Node.js, TypeORM, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT, CosmoDB.",
           projectContext: `Pour le compte de ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode de géstion de projet Combo.
           La plateforme permet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
@@ -321,7 +319,6 @@ export default {
       projects: [
         {
           projectName: " My Digital Workplace.",
-          client: " Société Général.",
           tecs: " TypeScript, Node.js, Nest.js, TypeORM, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
           projectContext: `Pour le compte de la Société Générale, et dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.
           Le projet avait comme objectif de créer une platforme qui agréger tous les services dédié aux collaborator, comme l'allocation de PC, de badges ou de machine virtuelle, la documentation et la création de liste de diffusions de mails`,
@@ -406,24 +403,6 @@ export default {
         },
       ],
       dislayPage: 2,
-    },
-    {
-      label: "EDIFIXIO - Stage fin d'études",
-      tag: "Mai 2015 - Nov 2016",
-      projects: [
-        {
-          projectName: " Couche de services Elasticsearch.",
-          tecs: " Java EE, Spring (Core, MVC,AOP), Elasticsearch.",
-          projectContext:
-            " Pour mon stage de fin d'études, j'ai eu à réaliser une API configurable en Java pour interroger un index Elasticsearch et générer des facettes dynamiques de recherche.",
-          projectMissions: [
-            "- Étude de l’état de l’art sur les moteurs de recherches.",
-            "- Conception et réalisation d'une API configurable utilisant des facettes sur Elasticsearch en Java.",
-          ],
-        },
-      ],
-
-      dislayPage: 3,
     },
   ],
   fomations: [
