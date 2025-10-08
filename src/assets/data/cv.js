@@ -5,10 +5,12 @@ export default {
   site: "https://amine-ouchiha.com",
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
-  overview: `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs, 
-  je suis intervenu dans différents projets de conseils et de développements, 
-  avec des contextes technologiques et organisationnels divers, notamment les écosystèmes Node.js et React.js.
-  Aujourd’hui, je suis à la recherche de nouvelles opportunités.`,
+  overview: `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs;
+  j’interviens depuis plusieurs années sur des projets de conseil et de développement au sein d’environnements variés.
+  J'ai fait le choix de m'orienté principalement vers l'ecosystémes Node.js / React.js pour ça polyvalence et ça communoté, 
+  toute en pratiquant une veille sur les autres ecosystémes. 
+  Aujourd’hui, je suis à la recherche de nouvelles opportunités  où je pourrai mettre à profit mon savoir-faire 
+  technique et mon goût pour les solutions élégantes et efficaces.`,
   skills: [
     {
       type: "Langages de programation",
@@ -155,10 +157,6 @@ export default {
         {
           label: "Webpack",
           progress: 50,
-        },
-        {
-          label: "BitBuckets / Gitlab / Github",
-          progress: 40,
         }
       ],
       dislayPage: 2,
@@ -249,10 +247,11 @@ export default {
       tag: "Mai 2024 - Aujourd’hui",
       projects: [
         {
-          projectName: "Générateur de CV ",
+          projectName: "Cvtec-office",
+          link : "https://cvtec-office.com",
+          role: "CEO / Développeur",
           tecs: "Nest.js, Next.js, Material UI, Jest, Puppeteer, Firebase",
-          projectContext: `J'ai réaliser pour le compte de mon entreprise TEC-INVEST une Application de génération de CV à partir de templates, 
-          avec des options de personnalisation avancées.`,
+          projectContext: `Avec un partenaire on à créer une Application de génération de CV à partir de templates, avec des options de personnalisation avancées.`,
           projectMissions: [
             "- Développement de l’UI avec Next.js.",
             "- Gestion des utilisateurs et génération des CV avec Nest.js.",
@@ -263,16 +262,19 @@ export default {
     },
     {
       style: {
-        marginTop: "0px",
+        marginTop: "5px",
       },
       label: "Europ Assistance",
+    
       tag: "Jui 2022 - Déc 2023",
       projects: [
         {
-          projectName: " E-Claims.",
-          tecs: " React.js, Webpack, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback 3 et 4.",
-          projectContext: `Pour le compte d'Europ-Assistance, je suis intervenu en tant que développeur fullStack sur le projet e-claims, dans une équipe composée de cinq développeurs, un PO et un Manager. La plateforme gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
-            Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé ( Daily / Poker planning ).`,
+          projectName: "E-Claims ",
+          link: "https://services.europ-assistance.fr",
+          role: "Développeur React.js / Java 8 / Node.js",
+          tecs: "React.js, Webpack, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback 3 et 4.",
+          projectContext: `Dans une équipe composée de cinq développeurs, un PO et un Manager. j'ai participé au développement d'E-claim, une plateforme qui gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
+          Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé ( Daily / Poker planning ).`,
           projectMissions: [
             "- Développement et maintenance des fonctionnalités front en React.js.",
             "- Refonte de l'UI en React.js en se basant sur du Material-UI.",
@@ -288,16 +290,17 @@ export default {
     },
     {
       style: {
-        marginTop: "0px",
+        marginTop: "5px",
       },
       label: "ITNovem (SNCF)",
       tag: "Jan 2021 - Fév 2022",
       projects: [
         {
-          projectName: " e-IOT.",
-          tecs: " Nest.js, Node.js, TypeORM, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT, CosmoDB.",
-          projectContext: `Pour le compte de ITNovem, une filiale de la SNCF, et dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode de géstion de projet Combo.
-          La plateforme permet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
+          projectName: "e-IOT.",
+          role: "Développeur Node.js / Nest.js",
+          tecs: "Nest.js, Node.js, TypeORM, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT, CosmoDB.",
+          projectContext: `Dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode de géstion de projet Combo.
+            La plateforme permet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
           projectMissions: [
             "- Développement de décodeurs de trame des IoT's sous forme de libreries en Typescript.",
             "- Développement de fonctionnalités de configuration sous forme de modules Nest.js.",
@@ -309,6 +312,7 @@ export default {
           ],
         },
       ],
+   
     },
     {
       style: {
@@ -318,9 +322,10 @@ export default {
       tag: "Déc 2019 - Déc 2020",
       projects: [
         {
-          projectName: " My Digital Workplace.",
-          tecs: " TypeScript, Node.js, Nest.js, TypeORM, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
-          projectContext: `Pour le compte de la Société Générale, et dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.
+          projectName: "My Digital Workplace.",
+          role: "Développeur Node.js / React.js ",
+          tecs: "TypeScript, Node.js, Nest.js, TypeORM, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
+          projectContext: `Dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.
           Le projet avait comme objectif de créer une platforme qui agréger tous les services dédié aux collaborator, comme l'allocation de PC, de badges ou de machine virtuelle, la documentation et la création de liste de diffusions de mails`,
           projectMissions: [
             "- Participation aux différentes cérémonies SAFe comme le Program Increment au sein du train.",
@@ -331,20 +336,21 @@ export default {
         },
       ],
       dislayPage: 2,
+      
     },
     {
       style: {
-        marginTop: "0px",
+        marginTop: "10px",
       },
       label: "EDIFIXIO",
       tag: "Mars 2016 - Oct 2019",
       projects: [
         {
           projectName: " Référentiel produit Carrefour.",
-          client: " Carrefour. Fév-Sept 2019",
-          tecs: " IBM MDM Infosphere, Java 8, Linux.",
-          projectContext: `Pour le compte de Carrefour, et dans le cadre d’un projet référentiel de données utilisant la solution IBM MDM, 
-          je suis intervenu dans une équipe de six personnes en tant que consultant développeur Java sur la solution.`,
+          client: "Carrefour. Fév-Sept 2019",
+          role: "Développeur Java / IBM MDM ",
+          tecs: "IBM MDM Infosphere, Java 8, Linux.",
+          projectContext: `Dans le cadre d’un projet référentiel de données utilisant la solution IBM MDM, je suis intervenu dans une équipe de six personnes en tant que consultant développeur Java sur la solution.`,
           projectMissions: [
             "- Mise en place de scripts Trigo Script pour import/ export de données.",
             "- Étude et Réécriture de routines d'import / export Java, dans le but d'optimiser les performances.",
@@ -354,9 +360,9 @@ export default {
         {
           projectName: " POC Intentionality.",
           client: " Interne Edifixio. Oct 2018 - Jan 2019",
+          role: "Développeur React.js ",
           tecs: " React.js, Redux, IBM Bluemix,Composants Bootstrap.",
-          projectContext: `Dans un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux, 
-          j'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
+          projectContext: `Dans le cadre d'un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux, j'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
           projectMissions: [
             "- Conception, découpage et réalisation des composants React.js .",
             "- Appel des services distant et intégration des services sur le front.",
@@ -365,6 +371,7 @@ export default {
         {
           projectName: " Application React Native - Salesforce (CXO).",
           client: " Salesforce. Aout-Oct 2018",
+          role: "Développeur React Native / Saleforce Apex ",
           tecs: " React Native, Salesforce, Apex, Push notification, Jest.",
           projectContext: `Dans un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux.
           J'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
@@ -376,10 +383,11 @@ export default {
         },
         {
           projectName: " Plateforme de dépannage en ligne.",
-          client: " Inter Mutuelle Assistance (IMA). Fev 2017 - Juil 2018",
-          tecs: ` Node.js, TypeScript, Angular, Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku, PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de, paiment Sogenactif.`,
-          projectContext: `Pour le compte de l'Inter Mutuelle Assistance (IMA) basée à Niort, 
-          on a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation.
+          link : "https://www.depannagehelp.com/",
+          client: "Inter Mutuelle Assistance (IMA). Fev 2017 - Juil 2018",
+          role: "Développeur fullstack ",
+          tecs: `Node.js, TypeScript, Angular, Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku, PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de, paiment Sogenactif.`,
+          projectContext: `On a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation.
           Sur ce projet, j’ai mené une mission de développeur puis de tech-lead.`,
           projectMissions: [
             "- Conception des services web RESTful Avec Node.js en Typescript.",
@@ -389,12 +397,13 @@ export default {
           ],
         },
         {
-
-          projectName: " Plateforme web et collaborative Jalios CMS.",
-          client: " COFREND. Mars 2016 - Jan 2017",
-          tecs: ` Jalios, Java JEE,  JavaScript, JQuery.`,
-          projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), et au sein d'une
-          équipe de trois personnes, j'ai participé à la réalisation d'une application web collaborative.`,
+          projectName: "Plateforme web et collaborative Jalios CMS.",
+          link: "https://www.cofrend.com/",
+          client: "COFREND. Mars 2016 - Jan 2017",
+          role: "Développeur Java/Jalios ",
+          tecs: `Jalios, Java JEE,  JavaScript, JQuery.`,
+          projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), et au sein d'une équipe de trois personnes. 
+            J'ai participé à la réalisation d'une application web pour la géstion des formation et la prise de redez-vous pour les cetification ainsi que les paiment.`,
           projectMissions: [
             "- Création de types de formulaires et gestion des règles métiers.",
             "- Création des pages portails et gestion de la navigation sur le site.",
@@ -409,13 +418,12 @@ export default {
     {
       label: "Université de Versaille (UVSQ)",
       tag: "2013 - 2015",
-      description:
-        "  Master en Analyse et conception de Systeme d'information Sûrs.",
+      description: "Master en Analyse et conception de Systeme d'information Sûrs.",
     },
     {
       label: "Université de Béjaïa (UAMB)",
       tag: "2010 - 2013",
-      description: "  Licence en informatique.",
+      description: "Licence en informatique.",
     },
   ],
 };

@@ -72,15 +72,14 @@ export const BodyContent = (props) => {
               return (
                 <View
                   style={{
-                    marginTop: "20px",
+                    marginTop: "10px",
                   }}
                 >
                   <ExperienceHeader label={label} tag={tag} />
                   <Text
                     style={{
-                      fontSize: "10px",
+                      fontSize: "8px",
                       color: "#58585A",
-                      fontFamily: "Times-Bold",
                     }}
                   >
                     {description}
