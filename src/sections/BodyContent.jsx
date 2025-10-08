@@ -78,7 +78,7 @@ export const BodyContent = (props) => {
                   <ExperienceHeader label={label} tag={tag} />
                   <Text
                     style={{
-                      fontSize: "8px",
+                      fontSize: "10px",
                       color: "#58585A",
                     }}
                   >

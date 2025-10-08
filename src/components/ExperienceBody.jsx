@@ -48,6 +48,7 @@ export const ExperienceBody = ({
   client,
   tecs,
   link,
+  role,
   projectContext,
   projectMissions,
 }) => {
@@ -66,6 +67,7 @@ export const ExperienceBody = ({
         )}
       </InfoComp>
       <InfoComp title="Client" info={client} />
+      <InfoComp title="Rôle" info={role} />
       <InfoComp title="Environnement" info={tecs} />
       <InfoComp
         title="Contexte"
@@ -80,8 +82,7 @@ export const ExperienceBody = ({
           fontFamily: "Times-Bold",
         }}
       >
-        {" "}
-        Missions :{" "}
+        Missions :
       </Text>
       <List
         style={{
@@ -92,133 +93,8 @@ export const ExperienceBody = ({
         }}
         listItems={projectMissions}
       />
-
       </View>
-     
     </View>
   );
 };
 
-/*
-<View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        {projectName && (
-          <Text
-            style={{
-              fontSize: "10px",
-              color: "#58585A",
-              fontFamily: "Times-Bold",
-            }}
-          >
-            Projet :
-            <Text
-              style={{
-                fontSize: "9px",
-                fontFamily: "Times-Roman",
-              }}
-            >
-              {projectName}
-            </Text>
-            {link && (
-              <Link style={{ color: "#58585A", marginLeft: "5px" }} src={link}>
-                <Text>({link})</Text>
-              </Link>
-            )}
-          </Text>
-        )}
-        {client && (
-          <Text
-            style={{
-              fontSize: "10px",
-              color: "#58585A",
-              fontFamily: "Times-Bold",
-            }}
-          >
-            Client :
-            <Text
-              style={{
-                fontFamily: "Times-Roman",
-                fontSize: "9px",
-              }}
-            >
-              {client}
-            </Text>
-          </Text>
-        )}
-      </View>
-
-      {tecs && (
-        <View style={{ marginTop: "4px" }}>
-          <Text
-            style={{
-              fontSize: "10px",
-              color: "#58585A",
-              fontFamily: "Times-Bold",
-            }}
-          >
-            Environnement:
-            <Text
-              style={{
-                fontFamily: "Times-Roman",
-                fontSize: "9px",
-              }}
-            >
-              {tecs}
-            </Text>
-          </Text>
-        </View>
-      )}
-
-      {projectContext && (
-        <View style={{ marginTop: "4px" }}>
-          <Text
-            style={{
-              fontSize: "10px",
-              color: "#58585A",
-              fontFamily: "Times-Bold",
-            }}
-          >
-            Contexte :
-          </Text>
-          <Text
-            style={{
-              color: "#58585A",
-              fontFamily: "Times-Roman",
-              fontSize: "9px",
-              paddingLeft: "10px",
-              textAlign: "justify",
-            }}
-          >
-            {projectContext}
-          </Text>
-        </View>
-      )}
-
-      {projectMissions && (
-        <View style={{ marginTop: "4px" }}>
-          <Text
-            style={{
-              fontSize: "10px",
-              color: "#58585A",
-              fontFamily: "Times-Bold",
-            }}
-          >
-            {" "}
-            Missions :{" "}
-          </Text>
-          <List
-            style={{
-              color: "#58585A",
-              fontFamily: "Times-Roman",
-              fontSize: "9px",
-              paddingLeft: "10px",
-            }}
-            listItems={projectMissions}
-          />
-        </View>
-      )}
-        */

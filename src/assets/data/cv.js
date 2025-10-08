@@ -5,12 +5,9 @@ export default {
   site: "https://amine-ouchiha.com",
   adresse: "180 BD Gabriel Péri, 93110, Rosny-Sous-Bois.",
   phone: "+33781581021",
-  overview: `Titulaire d’un Master en Analyse et Conception de Systèmes d'Informations Sûrs;
-  j’interviens depuis plusieurs années sur des projets de conseil et de développement au sein d’environnements variés.
-  J'ai fait le choix de m'orienté principalement vers l'ecosystémes Node.js / React.js pour ça polyvalence et ça communoté, 
-  toute en pratiquant une veille sur les autres ecosystémes. 
-  Aujourd’hui, je suis à la recherche de nouvelles opportunités  où je pourrai mettre à profit mon savoir-faire 
-  technique et mon goût pour les solutions élégantes et efficaces.`,
+  overview: `Titulaire d'un Master en Analyse et Conception de Systèmes d'Informations Sûrs, j'interviens depuis plusieurs années sur des projets de conseil et de développement au sein d'environnements techniques variés. 
+  J'ai choisi de concentrer mon expertise sur l'écosystème Node.js / React.js, séduit par sa polyvalence et la richesse de sa communauté. Je reste toutefois attentif aux évolutions des autres technologies afin de conserver une vision globale et moderne du développement.
+  Aujourd'hui, je souhaite rejoindre une équipe où je pourrai mettre à profit mes compétences.`,
   skills: [
     {
       type: "Langages de programation",
@@ -244,18 +241,21 @@ export default {
   experiences: [
     {
       label: "TEC-INVEST",
-      tag: "Mai 2024 - Aujourd’hui",
+      tag: "Mai 2024 - Aujourd'hui",
       projects: [
         {
-          projectName: "Cvtec-office",
+          projectName: "CVTEC-OFFICE",
           link : "https://cvtec-office.com",
-          role: "CEO / Développeur",
-          tecs: "Nest.js, Next.js, Material UI, Jest, Puppeteer, Firebase",
-          projectContext: `Avec un partenaire on à créer une Application de génération de CV à partir de templates, avec des options de personnalisation avancées.`,
+          role: "CEO / CTO",
+          tecs: "Nest.js, Next.js, Material UI, Jest, Puppeteer, Firebase.",
+          projectContext: `En collaboration avec un développeur partenaire, nous avons conçu une application dédiée à la création et à la génération de CV à partir d'un ensemble de modèles personnalisables.
+          Elle offre de nombreuses options avancées de personnalisation, permettant à chaque utilisateur de produire un CV à la fois professionnel, unique et parfaitement adapté à son profil.`,
           projectMissions: [
-            "- Développement de l’UI avec Next.js.",
-            "- Gestion des utilisateurs et génération des CV avec Nest.js.",
-            "- Création des templates de CV.",
+            "- Structuration des données relatives aux CV, aux thèmes et aux autres éléments de la plateforme.",
+            "- Conception et intégration des différents templates de CV.",
+            "- Développement et mise en place des API avec Nest.js.",
+            "- Réalisation de l'interface utilisateur avec Next.js et Material UI, permettant la saisie des informations et la personnalisation du thème des CV.",
+            "- Gestion complète des utilisateurs et des mécanismes d'authentification, incluant l'accès standard et le SSO."
           ],
         },
       ],
@@ -265,25 +265,24 @@ export default {
         marginTop: "5px",
       },
       label: "Europ Assistance",
-    
       tag: "Jui 2022 - Déc 2023",
       projects: [
         {
-          projectName: "E-Claims ",
+          projectName: "E-Claims.",
           link: "https://services.europ-assistance.fr",
-          role: "Développeur React.js / Java 8 / Node.js",
-          tecs: "React.js, Webpack, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback 3 et 4.",
-          projectContext: `Dans une équipe composée de cinq développeurs, un PO et un Manager. j'ai participé au développement d'E-claim, une plateforme qui gère des demandes de remboursements pour le compte de différents clients, comme AirBnb ou Lastminute et les transmet aux différents fournisseurs de couvertures (assurances).
-          Le projet a une partie back-office (E-conf),où on peut configurer les différentes fonctionnalités du front-office. Le framework de la gestion du projet est un scrum allégé ( Daily / Poker planning ).`,
+          role: "Développeur React.js / Java 8 / Node.js.",
+          tecs: "React.js, Webpack, admin-on-rest, Material-UI, Java 8, Node.js, Bitbucket, Jenkins, AWS Lambda, AWS RDS, loopback 3 / 4.",
+          projectContext: `Au sein d'une équipe composée de cinq développeurs, d'un Product Owner et d'un Manager, j'ai participé au développement d'E-Claim, une plateforme de gestion des demandes de remboursement pour le compte de clients tels qu'Airbnb ou Lastminute, avec transmission automatique des dossiers aux différents assureurs partenaires.
+          Le projet comprend une interface back-office (E-conf) permettant la configuration des fonctionnalités du front-office.
+          La gestion du projet s'appuyait sur une méthodologie Scrum allégée, intégrant notamment les daily meetings et les sessions de poker planning.`,
           projectMissions: [
-            "- Développement et maintenance des fonctionnalités front en React.js.",
-            "- Refonte de l'UI en React.js en se basant sur du Material-UI.",
-            "- Gestion et optimisation du bundling avec Webpack.",
-            "- Développement et maintenance des API backend (Java 8/ Spring).",
-            "- Maintenance du back-office en Admin-on-rest et Loopback 3.",
-            "- Migration de Loopback 3 à Loopback 4 du backend du back-office.",
-            "- Tirage et gestion de versions (Git / Bitbucket)",
-            "- Déploiments et testes avec du Jenkins sur des fonctions AWS Lambda."
+          "- Refonte complète de l'interface utilisateur en React.js, basée sur le framework Material-UI.",
+          "- Gestion et optimisation du processus de bundling avec Webpack.",
+          "- Développement et maintenance des API backend en Java 8 / Spring.",
+          "- Maintenance du back-office construit avec Admin-on-rest et Loopback 3.",
+          "- Migration du backend du back-office de Loopback 3 vers Loopback 4.",
+          "- Gestion des versions et branches via Git / Bitbucket.",
+          "- Déploiement et tests automatisés à l'aide de Jenkins, sur des fonctions AWS Lambda."
           ],
         },
       ],
@@ -299,16 +298,16 @@ export default {
           projectName: "e-IOT.",
           role: "Développeur Node.js / Nest.js",
           tecs: "Nest.js, Node.js, TypeORM, React.js, Gitlab, Jenkins, Kubernate, Robot-Framwork, Postgresql, Azure Cloud, IOT, CosmoDB.",
-          projectContext: `Dans le cadre de la refonte du socle de gestion des objets connectés, je suis intervenu en tant que développeur au sein d'une équipe de sept personnes en mode de géstion de projet Combo.
-            La plateforme permet de configurer différents types d'objets connectés afin de déterminer leur mode de connexion, ainsi que le décodage des flux de données, puis les regrouper en ensembles logiques.`,
+          projectContext: `Dans le cadre de la refonte du socle de gestion des objets connectés, j'ai intégré une équipe de sept personnes travaillant selon une approche de gestion de projet Combo.
+            La plateforme développée repose sur un ensemble d'API permettant de configurer différents types d'objets connectés, de souscrire à leurs flux de données et de les regrouper en ensembles logiques pour une gestion centralisée et cohérente..`,
           projectMissions: [
-            "- Développement de décodeurs de trame des IoT's sous forme de libreries en Typescript.",
-            "- Développement de fonctionnalités de configuration sous forme de modules Nest.js.",
-            "- Expositions des fonctionnalités via des CRUD RESTful sur Nest.js.",
-            "- Traitement des remontées de données en temps-reél des IoTs.",
-            "- Écriture de tests d'intégrations en utilisant le framework Robot-Framework.",
-            "- Tirage de versions des différents composants applicatifs (Git / Gitlab).",
-            "- Déploiment des composants sur les envirenements de pre-prod en utilisant Jenkins."
+            "- Développement de décodeurs de trames IoT sous forme de librairies TypeScript.",
+            "- Conception de modules de configuration intégrés à l'architecture Nest.js.",
+            "- Exposition des fonctionnalités via des CRUD RESTful développés avec Nest.js.",
+            "- Traitement en temps réel des données émises par les objets connectés.",
+            "- Rédaction de tests d'intégration à l'aide du framework Robot Framework.",
+            "- Gestion des versions des différents composants applicatifs avec Git / GitLab.",
+            "- Déploiement des composants sur les environnements de pré-production via Jenkins."
           ],
         },
       ],
@@ -316,22 +315,22 @@ export default {
     },
     {
       style: {
-        marginTop: "0px",
+        marginTop: "2px",
       },
       label: "Société Générale",
       tag: "Déc 2019 - Déc 2020",
       projects: [
         {
           projectName: "My Digital Workplace.",
-          role: "Développeur Node.js / React.js ",
+          role: "Développeur Node.js / React.js.",
           tecs: "TypeScript, Node.js, Nest.js, TypeORM, React.js, Gitlab, Openshift, Jenkins, Scrum, SAFE.",
-          projectContext: `Dans le cadre d’un projet intranet pour le support utilisateur, je suis intervenu en tant que développeur dans une feature team de cinq personnes composée de trois dev, un PR et un Scrum, dans un train composé de quatre équipes de développements.
-          Le projet avait comme objectif de créer une platforme qui agréger tous les services dédié aux collaborator, comme l'allocation de PC, de badges ou de machine virtuelle, la documentation et la création de liste de diffusions de mails`,
+          projectContext: `J'ai intégré une équipe composée de trois développeurs, d'un Product Owner et d'un Scrum Master, au sein d'un train rassemblant quatre équipes.
+          Le projet My Digital Workplace avait pour objectif de concevoir une plateforme unifiée regroupant l'ensemble des services destinés aux collaborateurs : allocation de matériel (PC, badges, machines virtuelles), accès à la documentation, et gestion des listes de diffusion pour les communications internes.`,
           projectMissions: [
-            "- Participation aux différentes cérémonies SAFe comme le Program Increment au sein du train.",
-            "- Développement des Api's back Node.js Avec Le framwork Nest.js et L'ORM TypeORM.", 
-            "- Développement du Front en React.js en TypeScript.",
-            "- Tirage de versions et participation à la mise en production (Git / Gitlab).",
+          "- Participation aux différentes cérémonies SAFe, notamment les Program Increments, au sein du train de développement.",
+          "- Développement des API backend en Node.js, avec le framework Nest.js et l'ORM TypeORM.",
+          "- Conception et implémentation du front-end en React.js avec TypeScript.",
+          "- Gestion des versions et participation aux mises en production via Git / GitLab."
           ],
         },
       ],
@@ -340,7 +339,7 @@ export default {
     },
     {
       style: {
-        marginTop: "10px",
+        marginTop: "2px",
       },
       label: "EDIFIXIO",
       tag: "Mars 2016 - Oct 2019",
@@ -348,66 +347,66 @@ export default {
         {
           projectName: " Référentiel produit Carrefour.",
           client: "Carrefour. Fév-Sept 2019",
-          role: "Développeur Java / IBM MDM ",
+          role: "Développeur Java / IBM MDM.",
           tecs: "IBM MDM Infosphere, Java 8, Linux.",
-          projectContext: `Dans le cadre d’un projet référentiel de données utilisant la solution IBM MDM, je suis intervenu dans une équipe de six personnes en tant que consultant développeur Java sur la solution.`,
+          projectContext: `Dans le cadre d'un projet référentiel de données sur IBM MDM Infosphere, j'ai intervenu en tant que consultant développeur Java sur la solution IBM MDM.`,
           projectMissions: [
-            "- Mise en place de scripts Trigo Script pour import/ export de données.",
-            "- Étude et Réécriture de routines d'import / export Java, dans le but d'optimiser les performances.",
-            "- Réalisation d'une documentation sur l'architecture applicative.",
+            "- Conception et mise en œuvre de scripts Trigo Script pour l'import/export de données.",
+            "- Analyse et réécriture des routines Java d'import/export afin d'optimiser les performances.",
+            "- Rédaction d'une documentation détaillée sur l'architecture applicative."
           ],
         },
         {
-          projectName: " POC Intentionality.",
-          client: " Interne Edifixio. Oct 2018 - Jan 2019",
-          role: "Développeur React.js ",
+          projectName: "POC Intentionality.",
+          client: "Interne Edifixio. Oct 2018 - Jan 2019",
+          role: "Développeur React.js.",
           tecs: " React.js, Redux, IBM Bluemix,Composants Bootstrap.",
-          projectContext: `Dans le cadre d'un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux, j'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
+          projectContext: `Participation au développement du front-end d'une IA de prédiction d'impact sur les réseaux sociaux, réalisée avec React.js.`,
           projectMissions: [
-            "- Conception, découpage et réalisation des composants React.js .",
-            "- Appel des services distant et intégration des services sur le front.",
+          "- Conception, découpage et développement des composants React.js.",
+          "- Documentation des composants React.js avec Storybook.",
+          "- Intégration des services distants et appels aux API côté front."
           ],
         },
         {
-          projectName: " Application React Native - Salesforce (CXO).",
-          client: " Salesforce. Aout-Oct 2018",
-          role: "Développeur React Native / Saleforce Apex ",
-          tecs: " React Native, Salesforce, Apex, Push notification, Jest.",
-          projectContext: `Dans un projet en interne de création d'une IA pour la prédiction d'impact sur les réseaux sociaux.
-          J'ai participé à la réalisation du front de l'application au sein d'une équipe de quatre personnes.`,
+          projectName: "Application React Native - Salesforce (CXO).",
+          client: "Salesforce. Aout-Oct 2018",
+          role: "Développeur React Native / Saleforce Apex.",
+          tecs: "React Native, Salesforce, Apex, Push notification, Jest, Enzyme.",
+          projectContext: `CXO est une application mobile de type réseau social, destinée aux CEO, avec une intégration directe à Salesforce.`,
           projectMissions: [
-            "- Migration des services React native côté Back (APEX) pour réduire le nombre d'appels intermédiaires serveur.",
-            "- Test Unitaire de services (Code Coverage Salesforce) et des composants React Native avec Jest et Enzyme.",
-            "- Mise en place de Push notifications et création des triggers APEX pour les générer.",
+            "- Développement des composants React Native et des interfaces mobiles.",
+            "- Migration des services React Native côté backend (APEX) pour réduire les appels intermédiaires au serveur.",
+            "- Réalisation de tests unitaires des services avec suivi de la couverture de code Salesforce.",
+            "- Mise en place des push notifications et création des triggers APEX pour leur génération."
           ],
         },
         {
-          projectName: " Plateforme de dépannage en ligne.",
+          projectName: "Plateforme de dépannage en ligne.",
           link : "https://www.depannagehelp.com/",
           client: "Inter Mutuelle Assistance (IMA). Fev 2017 - Juil 2018",
-          role: "Développeur fullstack ",
+          role: "Développeur fullstack.",
           tecs: `Node.js, TypeScript, Angular, Angular.js, Gulp, Heroku Paas, add-on Heroku, Pipe Heroku, PostgreSQL, Mocha, Salesforce, Talend ETL, platforme de, paiment Sogenactif.`,
-          projectContext: `On a réalisé une application de dépannage d’urgence en ligne dans les domaines de l’automobile et de l’habitation.
-          Sur ce projet, j’ai mené une mission de développeur puis de tech-lead.`,
+          projectContext: `Nous avons développé une application de dépannage d'urgence en ligne dans les secteurs de l'automobile et de l'habitation.
+                  Sur ce projet, j'ai exercé les fonctions de développeur puis de tech-lead.`,
           projectMissions: [
-            "- Conception des services web RESTful Avec Node.js en Typescript.",
-            "- Interfaçage avec Le CRM Salesforce via Heroku Connect.",
-            "- Implémentation de l'UI en utilisant Angular.",
-            "- Mise en place de la CI avec Heroku flow et de la CD avec remote views.",
+            "- Conception des services web RESTful en Node.js avec TypeScript.",
+            "- Intégration avec le CRM Salesforce via Heroku Connect.",
+            "- Développement de l'interface utilisateur avec Angular.",
+            "- Mise en place de la CI avec Heroku Flow et de la CD via Remote Views."
           ],
         },
         {
           projectName: "Plateforme web et collaborative Jalios CMS.",
           link: "https://www.cofrend.com/",
           client: "COFREND. Mars 2016 - Jan 2017",
-          role: "Développeur Java/Jalios ",
+          role: "Développeur Java/Jalios.",
           tecs: `Jalios, Java JEE,  JavaScript, JQuery.`,
-          projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), et au sein d'une équipe de trois personnes. 
-            J'ai participé à la réalisation d'une application web pour la géstion des formation et la prise de redez-vous pour les cetification ainsi que les paiment.`,
+          projectContext: `Pour le compte de la Confédération Française pour les Essais Non Destructifs (COFREND), au sein d'une équipe de trois personnes, j'ai contribué au développement d'une application web permettant la gestion des formations, la prise de rendez-vous pour les certifications et le traitement des paiements.`,
           projectMissions: [
             "- Création de types de formulaires et gestion des règles métiers.",
-            "- Création des pages portails et gestion de la navigation sur le site.",
-            "- Interfaçage avec un service de paiement en ligne (avec la solution Monetico).",
+            "- Conception des pages portail et organisation de la navigation sur le site.",
+            "- Intégration d'un service de paiement en ligne via la solution Monetico."
           ],
         },
       ],

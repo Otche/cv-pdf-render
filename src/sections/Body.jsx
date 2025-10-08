@@ -6,7 +6,7 @@ import { BodyContent } from "./BodyContent";
 
 export const Body = ({pagenum}) => {
     const bodyStyles = StyleSheet.create({
-        height: pagenum === 1 ? "85%" : "100%",
+        height: pagenum === 1 ? "82%" : "100%",
         display: "flex",
         flexDirection: "row",
       });

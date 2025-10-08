@@ -6,7 +6,7 @@ import locationIcon from "../assets/images/location.png";
 import phoneIcon from "../assets/images/phone.png";
 import emailIcon from "../assets/images/email.png";
 import webIcon from "../assets/images/web.png";
-import profileImage from "../assets/images/amine-photo-802w.jpg";
+import profileImage from "../assets/images/amine-photo.jpeg";
 import { DataContext } from "./Cv";
 
 
@@ -80,7 +80,8 @@ const ImageProfilRender = ( props) => (
     ></View>
     <View  style={{
           width: "100%",
-          height: "93%",
+          height: "65%",
+          marginTop : "10px",
           borderColor: "#12B4E4",
           borderStyle: "solid",
           borderWidth: "2px",
@@ -147,8 +148,8 @@ const RigthSectionRender = (props) => {
     >
       <JobNameRender/>
       <Text  style={{
-        marginTop: "10px",
-        fontSize : "10px",
+        marginTop: "5px",
+        fontSize : "9px",
         marginRight :"5px",
         lineHeight : "1.5px",
         textAlign : "justify"
@@ -162,7 +163,7 @@ const RigthSectionRender = (props) => {
 
 // Create styles
 const headerStyles = StyleSheet.create({
-  height: "15%",
+  height: "18%",
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#58585A",

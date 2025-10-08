@@ -11,22 +11,35 @@ export const ExperienceSection = ({ label, tag, projects, style = {} }) => {
   return (
     <View style={componentStyle}>
       <ExperienceHeader label={label} tag={tag} />
-      {projects.map((project, index) => (
-        <>
-          <ExperienceBody {...project} />
-          {index !== projects.length - 1 && (
-            <View style={{ display: "flex" , alignItems: "center", justifyContent: "center", width:"100%" , marginTop: "3px" , marginBottom: "3px"}}>
+      <View style={{
+        marginTop: "-13px"
+      }}>
+        {projects.map((project, index) => (
+          <>
+            <ExperienceBody {...project} />
+            {index !== projects.length - 1 && (
               <View
-              style={{
-                width: "300px",
-                height: "1px",
-                backgroundColor: "#12B4E4",
-              }}
-            />
-            </View>
-          )}
-        </>
-      ))}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                  marginTop: "3px",
+                  marginBottom: "3px",
+                }}
+              >
+                <View
+                  style={{
+                    width: "300px",
+                    height: "1px",
+                    backgroundColor: "#12B4E4",
+                  }}
+                />
+              </View>
+            )}
+          </>
+        ))}
+      </View>
     </View>
   );
 };
