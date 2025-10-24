@@ -41,7 +41,7 @@ export const SkillsHeader = ({icon , label}) => {
         />
       </View>
       <View>
-        <Text style={{ color: "#12B4E4", fontSize: "10px", marginLeft: "5px" }}>
+        <Text style={{ color: "#12B4E4", fontSize: "10px", marginLeft: "1px" }}>
           {label}
         </Text>
       </View>

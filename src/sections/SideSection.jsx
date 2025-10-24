@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { SectionBadge } from "../components/SectionBadge";
 import { SkillsTypeContent } from "../components/SkillsTypeContent";
-import cvData from "../assets/data/cv";
+import cvData from "../assets/data/cv-fr";
 import { DataContext } from "./Cv";
 
 
