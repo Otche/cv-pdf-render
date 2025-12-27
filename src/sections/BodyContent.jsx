@@ -56,7 +56,7 @@ export const BodyContent = (props) => {
               borderTopColor: "#12B4E4",
               borderTopStyle: "solid",
               borderTopWidth: "2px",
-              marginTop: "20px",
+              marginTop: "5px",
             }}
           >
             <SectionBadge label={"Formations"} />
@@ -72,7 +72,7 @@ export const BodyContent = (props) => {
               return (
                 <View
                   style={{
-                    marginTop: "20px",
+                    marginTop: "10px",
                   }}
                 >
                   <ExperienceHeader label={label} tag={tag} />
@@ -80,7 +80,6 @@ export const BodyContent = (props) => {
                     style={{
                       fontSize: "10px",
                       color: "#58585A",
-                      fontFamily: "Times-Bold",
                     }}
                   >
                     {description}

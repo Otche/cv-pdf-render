@@ -5,7 +5,8 @@ import { getFileData } from "../utils/read-file";
 import locationIcon from "../assets/images/location.png";
 import phoneIcon from "../assets/images/phone.png";
 import emailIcon from "../assets/images/email.png";
-import profileImage from "../assets/images/profil-img.png";
+import webIcon from "../assets/images/web.png";
+import profileImage from "../assets/images/amine-photo.jpeg";
 import { DataContext } from "./Cv";
 
 
@@ -52,12 +53,13 @@ const JobNameRender = (props) => {
 
 const ContactRender = (props) => {
   const data = useContext(DataContext);
-  const { phone, email,adresse}  = data;
+  const { phone, email,adresse, site}  = data;
   return (
     <View {...props}>
       <InfoLine text={adresse} icon={locationIcon} />
       <InfoLine text={phone} icon={phoneIcon} linkType={"tel"} />
       <InfoLine text={email} icon={emailIcon} linkType={"mailto"} />
+      <InfoLine text={site} icon={webIcon} linkType={"url"}  />
     </View>
   );
 };
@@ -78,7 +80,8 @@ const ImageProfilRender = ( props) => (
     ></View>
     <View  style={{
           width: "100%",
-          height: "93%",
+          height: "65%",
+          marginTop : "10px",
           borderColor: "#12B4E4",
           borderStyle: "solid",
           borderWidth: "2px",
@@ -121,7 +124,8 @@ const LeftSectionRender = (props) => {
     >
       <IdentiyRender/>
       <ContactRender style = {{
-        marginTop : "10px",
+        marginTop : "5px",
+        marginBottom :"2px", 
         fontSize : "9px"
       }}/>
     </View>
@@ -144,8 +148,8 @@ const RigthSectionRender = (props) => {
     >
       <JobNameRender/>
       <Text  style={{
-        marginTop: "10px",
-        fontSize : "10px",
+        marginTop: "5px",
+        fontSize : "9px",
         marginRight :"5px",
         lineHeight : "1.5px",
         textAlign : "justify"
@@ -159,7 +163,7 @@ const RigthSectionRender = (props) => {
 
 // Create styles
 const headerStyles = StyleSheet.create({
-  height: "15%",
+  height: "18%",
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#58585A",

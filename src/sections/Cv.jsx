@@ -2,7 +2,7 @@ import React from "react";
 import { Page, Document, StyleSheet } from "@react-pdf/renderer";
 import { Header } from "./Header";
 import { Body } from "./Body";
-import cvData from "../assets/data/cv";
+
 const FORMAT = "A4";
 
 // Create styles
@@ -14,7 +14,7 @@ const rootStyle = StyleSheet.create({
 
 export const DataContext = React.createContext();
 
-export const Cv = () => (
+export const Cv = ({cvData}) => (
   <DataContext.Provider value={cvData}>
     <Document>
       <Page size={FORMAT} style={rootStyle}>
